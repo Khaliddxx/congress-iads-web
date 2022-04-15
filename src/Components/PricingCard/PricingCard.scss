@@ -1,98 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-:root {
-    --primary-color: #1e64b0;
-    --secondary-color: #1b1d1f;
-}
 
 .pricingCard {
-    font-family: 'Poppins';
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: white;
     color: #414141;
-    height: 750px;
-    width: 22em;
-    border: 1px solid white;
+    width: 304px;
+    height: 740px;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+    background: #ECECEC;
+    box-sizing: border-box;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.title {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: var(--primary-color);
-    height: 25%;
-    font-size: 1.75em;
-    width: 100%;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);;
-    
-}
-
-.price {
-    display: flex;
-    height: 10%;
-    width: 100%;
-    font-weight: 100;
-    position: relative;
-    color: #5b5b5e;
-    font-family: "Lato",sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-}
-
-
-.features {
-    align-items: center;
-    width: 50%;
-    background-color: white;
-    height: 50%;
-    width: 100%;
-    color: var(--secondary-color);
-
-    p{
-        margin: 0px 30px;
-        padding: 10px 0px;
-        border-top: 2px solid grey;
+    .title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background: #A4A4A4;
+        height: 25%;
+        font-size: 1.75em;
+        width: 100%;
+        overflow: hidden;
     }
-   
-}
 
+    .titleText {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin: 0;
 
+        color: #3C3C3D;
 
-.cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    width: 100%;
-    color: var(--secondary-color);
+    }
 
-    button{
-            background: var(--primary-color);
+    .subtitleText {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: white;
+
+    }
+
+    .price {
+        display: flex;
+        height: 10%;
+        width: 100%;
+        position: relative;
+        color: #3C3C3D;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    
+    
+    .features {
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        width: 100%;
+        color: #272727;
+    
+        p {
+            margin: 0px 30px;
+            padding: 10px 0px;
+    
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    
+    }
+
+    .cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20%;
+        width: 100%;
+        color: var(--secondary-color);
+    
+        button {
+            background: #A4A4A4;
             color: white;
             text-decoration: none;
             padding: .5em 1.5em;
-            font-size: 1.3em;
             border-radius: 0em;
             display: inline-block;
-            font-family: 'Poppins';
             border: none;
+            border-radius: 100px;
+    
+    
+    
+    
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 33px;
+            letter-spacing: 0.2em;
+    
+            text-transform: uppercase;
+    
+        }
     }
+    
 }
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 768px) {
- .pricingCard{
-     width: 100%;
- }
+    .pricingCard {
+        width: 100%;
+    }
 }
-
-

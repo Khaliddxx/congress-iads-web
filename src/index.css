@@ -8,6 +8,13 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ 
+}
+
+
+:root {
+  --primary-color: #FDBE3D;
+  --secondary-color: #01838C;
+  --black-color: #2d2d2d;
+  --grey-color: #6d6d6d;
 }

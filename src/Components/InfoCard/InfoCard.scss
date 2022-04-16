@@ -8,7 +8,11 @@
     flex-direction: column;
     border-radius: 20px;
     padding: 25px 41px;
+    z-index: 100000000000000000000000;
 
+    .title{
+        width: 100%;
+    }
 
     .bodyText {
         font-weight: 400;

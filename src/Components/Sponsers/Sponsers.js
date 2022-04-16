@@ -21,7 +21,7 @@ function Sponsers(props) {
           <img src={zhermack} ></img>
           <img src={HFC} ></img>
           <img src={colgate} ></img>
-          <img src={gold} ></img>
+          {/* <img src={gold} ></img> */}
           <img src={KSA} ></img>
         </div>
       </div>

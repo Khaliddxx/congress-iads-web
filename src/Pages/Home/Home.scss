@@ -143,6 +143,32 @@ h2 {
 }
 
 
+.exploreCard {
+    p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #1C1C1C;
+    }
+
+    .hongKong {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        color: #01838C;
+    }
+}
+
+
 .about {
     display: flex;
     align-items: center;
@@ -168,18 +194,22 @@ h2 {
 }
 
 
+.hongKong {
+    font-family: 'Hong Kong Script Brush Regular';
+}
 
 .pre {
     margin: auto;
     margin-top: 81px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 357px;
     max-width: 1103px;
 
 
     .preInner {
+        position: relative;
         background: #C6C6C6;
         height: 100%;
         width: 100%;
@@ -188,20 +218,37 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        // flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
+        margin-left: -350px;
         box-sizing: border-box;
+        z-index: -11;
 
-        .preCard {
-            margin-right: auto;
-            margin-left: -132px;
-        }
+
+
     }
+
 }
 
 
+.preCard {
+    .hongKong {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 51px;
+    }
 
+    p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0px;
+        margin-top: -8px;
+        /* identical to box height */
+
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+}
 
 
 
@@ -211,13 +258,14 @@ h2 {
     margin-top: 81px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 357px;
     max-width: 1103px;
 
 
     .postInner {
-        background: #EAEAEA;
+        position: relative;
+        background: #C6C6C6;
         height: 100%;
         width: 100%;
         box-sizing: border-box;
@@ -225,15 +273,11 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        // flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
+        margin-right: -350px;
         box-sizing: border-box;
+        z-index: -11;
 
-        .postCard {
-            margin-left: auto;
-            margin-right: -132px;
-        }
+        .postCard {}
     }
 }
 
@@ -243,24 +287,36 @@ h2 {
 
 .letterSection {
     max-width: 1203px;
-    height: 351px;
     margin: auto;
     margin-top: 81px;
 
 
+
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-around;
 
     .letterSectionBody {
-        height: 100%;
-        max-width: 701px;
+        width: 70%;
+        margin: auto;
+
+        .hongKong {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 61px;
+            /* identical to box height */
+
+            margin: 0;
+            color: #FDBE3D;
+        }
 
         .title {
             font-style: normal;
             font-weight: 700;
             font-size: 25px;
-            line-height: 30px;
+            line-height: 0px;
             /* identical to box height */
 
             letter-spacing: 0.2em;
@@ -274,9 +330,16 @@ h2 {
             font-weight: 400;
             font-size: 12px;
             line-height: 18px;
-
             color: #313030;
         }
+    }
+
+
+    .letterSectionCard {
+        width: 25%;
+        height: 100%;
+        margin: auto;
+
     }
 }
 
@@ -299,17 +362,35 @@ h2 {
         margin-bottom: 71px;
 
         .scheduleTitle {
-            text-align: center;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 48px;
-            /* identical to box height */
 
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
+            .hongKong {
 
-            color: #FFFFFF;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 101px;
+                text-align: center;
+
+                color: #FDBE3D;
+                z-index: 100;
+            }
+
+
+            p {
+                margin-top: -15%;
+                text-transform: uppercase;
+                text-align: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                /* identical to box height */
+
+                letter-spacing: 0.2em;
+
+                color: #FFFFFF;
+            }
+
         }
 
 
@@ -318,6 +399,7 @@ h2 {
             align-items: center;
             justify-content: center;
             text-decoration: none;
+            max-width: 100%;
             width: 435px;
             height: 39px;
             font-style: normal;
@@ -342,10 +424,11 @@ h2 {
 
     .scheduleRow {
         display: flex;
+        width: 100%;
+        margin: auto;
 
         .scheduleRowTitle {
-            width: 198px;
-            // border-right: 15px solid var(--primary-color);
+            width: 20%;
 
             p {
 
@@ -373,12 +456,13 @@ h2 {
         .border1 {
             width: 15px;
             background-color: var(--primary-color);
+            margin-left: 2%;
+            margin-right: 4%;
         }
 
 
         .description {
-            width: 610px;
-            margin-left: 65px;
+            width: 80%;
             height: 48px;
             font-style: normal;
             font-weight: 400;
@@ -432,17 +516,36 @@ h2 {
         margin: auto;
         margin-bottom: 70px;
 
-        p {
+        .hongKong {
+            font-family: 'Hong Kong Script Brush Regular';
             font-style: normal;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 36px;
-            text-align: center;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 101px;
+            /* identical to box height */
 
-            color: #FFFFFF;
+            text-align: center;
+
+            color: #FDBE3D;
+            z-index: 100;
         }
+
+        .subTitle {
+            margin-top: -13%;
+
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+        }
+
     }
 
 
@@ -492,13 +595,24 @@ h2 {
         margin: auto;
         margin-bottom: 70px;
 
+        .hongKong {
+            font-family: 'Hong Kong Script Brush Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 81px;
+            text-align: center;
+
+            color: #FDBE3D;
+        }
+
         p {
             font-style: normal;
             font-weight: 700;
             font-size: 30px;
             line-height: 36px;
             /* identical to box height */
-
+            margin-top: -17%;
             letter-spacing: 0.2em;
             text-transform: uppercase;
 

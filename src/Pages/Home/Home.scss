@@ -38,6 +38,8 @@ h2 {
 
 
     .mainInner {
+
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -46,7 +48,10 @@ h2 {
     }
 
     .backgroundImage {
-        background-color: #444444;
+        background-image: url(../../Assets/Images/home.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         border-radius: 20px;
         height: 100%;
         width: 100%;
@@ -107,6 +112,38 @@ h2 {
         border-radius: 20px;
         margin-left: auto;
         margin-right: auto;
+
+        box-shadow: -4px -8px 6px rgba(0, 0, 0, 0.2);
+
+
+        .tabComponent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .icon {
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                background:  #C4C4C4;
+            }
+
+            .link {
+
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                /* identical to box height */
+
+                letter-spacing: 0.2em;
+
+                color: #FFFFFF;
+                text-transform: uppercase;
+                margin-left: 10px;
+            }
+        }
     }
 
 }
@@ -114,6 +151,7 @@ h2 {
 
 
 .explore {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: auto;
     display: flex;
     align-items: center;
@@ -123,9 +161,12 @@ h2 {
 
 
     .exploreInner {
+        background-image: url(../../Assets/Images/explore.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
-        background: #C6C6C6;
 
         width: 100%;
         height: 100%;
@@ -180,6 +221,11 @@ h2 {
 
 
     .aboutInner {
+
+        background-image: url(../../Assets/Images/about.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -206,11 +252,16 @@ h2 {
     justify-content: space-between;
     height: 357px;
     max-width: 1103px;
-
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     .preInner {
+
+        background-image: url(../../Assets/Images/pre.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
         position: relative;
-        background: #C6C6C6;
         height: 100%;
         width: 100%;
         box-sizing: border-box;
@@ -261,11 +312,16 @@ h2 {
     justify-content: space-between;
     height: 357px;
     max-width: 1103px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 
     .postInner {
+        background-image: url(../../Assets/Images/post.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
         position: relative;
-        background: #C6C6C6;
         height: 100%;
         width: 100%;
         box-sizing: border-box;
@@ -354,6 +410,11 @@ h2 {
     height: 1192px;
     width: 100%;
 
+    background-image: url(../../Assets/Images/Ciruit.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+
+    // background-size: cover;
     .scheduleHeader {
         display: flex;
         align-items: center;
@@ -499,9 +560,10 @@ h2 {
     align-items: center;
     flex-direction: column;
 
-
-    background: #343131;
-    ;
+    background-image: url(../../Assets/Images/sponsersBack.svg);
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
     color: white;
     position: relative;

@@ -1,9 +1,10 @@
 .memberCard {
-    height: 228px;
+    height: 268px;
+    margin-bottom: 10px;
     width: 202px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     overflow: hidden;
     flex-direction: column;
 
@@ -11,15 +12,19 @@
 
     .image {
         display: flex;
-        height: 65%;
-        width: 100%;
-        margin: auto;
+        width: 140px;
+        height: 135px;
+        top: 0;
+        overflow: hidden;
+        border-radius: 20px;
+
+        // margin: auto;
 
 
         img {
-            height: 100%;
-            border-radius: 50%;
+            width: 100%;
             margin: auto;
+            margin-top: -10px;
         }
     }
 
@@ -33,6 +38,9 @@
         color: var(--primary-color);
         font-weight: 700;
         text-align: center;
+        margin: 0;
+        // margin-top: -60px;
+
     }
 
 
@@ -41,6 +49,7 @@
         text-transform: uppercase;
         height: 15%;
         text-align: center;
+        // margin-top: -50px;
 
     }
 }

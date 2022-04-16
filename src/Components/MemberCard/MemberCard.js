@@ -1,14 +1,13 @@
 import React from "react";
 import "./MemberCard.scss";
-import  memberPic  from "../../Assets/Images/member.png";
 
-function MemberCard() {
+function MemberCard(props) {
   return (
     <>
       <div className="memberCard">
-        <div className="image"><img src={memberPic} /></div>
-        <div className="name">Ahmed Gamed </div>
-        <div className="position">Chairperson</div>
+        <div className="image"><img src={props.img} /></div>
+        <p className="name">{props.name} </p>
+        <div className="position">{props.position}</div>
       </div>
     </>
   );

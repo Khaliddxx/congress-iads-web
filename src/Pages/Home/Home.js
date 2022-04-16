@@ -9,6 +9,26 @@ import LetterCardImage1 from "../../Assets/Images/lc1.svg";
 import LetterCardImage2 from "../../Assets/Images/lc2.svg";
 import { Carousel } from "react-bootstrap";
 import CongressLogo from "../../Assets/Images/congresslogoLanding.png";
+import member1 from "../../Assets/Images/OrganizingComm/Arman Baimbetov.jpg";
+import member2 from "../../Assets/Images/OrganizingComm/Abay Kalymtai.png";
+import member3 from "../../Assets/Images/OrganizingComm/Zhengis Zhamashev.JPG";
+import member4 from "../../Assets/Images/OrganizingComm/Zhuldyz Kabizhankyzy.JPG";
+import member5 from "../../Assets/Images/OrganizingComm/Darina Lysakova.JPG";
+
+
+import member6 from "../../Assets/Images/OrganizingComm/Nurai Serikkyzy.JPG";
+import member7 from "../../Assets/Images/OrganizingComm/Anel Azhigaliyeva.JPG";
+import member8 from "../../Assets/Images/OrganizingComm/Darya Yavuz.png";
+import member9 from "../../Assets/Images/OrganizingComm/Asylai Nauryzova.JPG";
+import member10 from "../../Assets/Images/OrganizingComm/IMG_3203.JPG";
+
+
+import member11 from "../../Assets/Images/OrganizingComm/Aigerim Kenzhebek.JPG";
+import member12 from "../../Assets/Images/OrganizingComm/Ayazhan Shalkhybayeva.JPG";
+import member13 from "../../Assets/Images/OrganizingComm/Sardar Srazhadin.JPG";
+
+
+
 import InfoCard from "../../Components/InfoCard/InfoCard";
 import LetterCard from "../../Components/LetterCard/LetterCard";
 import Sponsers from "../../Components/Sponsers/Sponsers";
@@ -31,7 +51,24 @@ function Home() {
 
               <a className="mainCta">REGISTER NOW</a>
             </div>
-            <div className="tab"></div>
+            <div className="tab">
+              <div className="tabComponent">
+                <div className="icon"></div>
+                <div className="link">Instagram</div>
+              </div>
+              <div className="tabComponent">
+                <div className="icon"></div>
+                <div className="link">Facebook</div>
+              </div>
+              <div className="tabComponent">
+                <div className="icon"></div>
+                <div className="link">Youtube</div>
+              </div>
+              <div className="tabComponent">
+                <div className="icon"></div>
+                <div className="link">Youtube</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -283,12 +320,83 @@ function Home() {
           </div>
           <div class="container">
             <ul class="membersList">
-              <MemberCard />
-              <MemberCard />
-              <MemberCard />
-              <MemberCard />
-              <MemberCard />
-              <MemberCard />
+              <MemberCard
+                name="Arman Baimbetov"
+                position="AC Chairperson"
+                img={member1}
+              />
+                <MemberCard
+                name="Zhengis Zhamashev"
+                position="head organizer"
+                img={member2}
+              />
+                <MemberCard
+                name="Abay Kalymtai"
+                position="Vice-Chair"
+                img={member3}
+              />
+                <MemberCard
+                name="Zhuldyz Kabizhankyzy"
+                position="Vice-Chair for sections"
+                img={member4}
+              />
+                <MemberCard
+                name="Darina Lysakova"
+                position="Secretary"
+                img={member5}
+              />
+
+
+
+
+
+<MemberCard
+                name="Nurai Serikkyzy"
+                position="Guides coordinator & Accommodation and Venue"
+                img={member6}
+              />
+                <MemberCard
+                name="Anel Azhigaliyeva"
+                position="Fundraising coordinator"
+                img={member7}
+              />
+                <MemberCard
+                name="Dar’ya Yavuz"
+                position="IT coordinator (Publications team, IT team, Design team)"
+                img={member8}
+              />
+                <MemberCard
+                name="Asylai Nauryzova"
+                position="IT coordinator (Publications team, IT team, Design team)"
+                img={member9}
+              />
+                <MemberCard
+                name="Dariga Ospanova"
+                position="IT coordinator (Publications team, IT team, Design team)"
+                img={member10}
+              />
+
+
+
+
+<MemberCard
+                name="Aigerim Kenzhebekz"
+                position="Social program coordinator"
+                img={member11}
+              />
+                <MemberCard
+                name="Ayazhan Shalkhybayeva"
+                position="Registration coordinator"
+                img={member12}
+              />
+                <MemberCard
+                name="Sardar Srazhadin"
+                position="Logistics coordinator"
+                img={member13}
+              />
+              
+              
+
             </ul>
           </div>
         </section>

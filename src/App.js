@@ -6,6 +6,7 @@ import {
   Route,
   useRoutes,
 } from "react-router-dom";
+import Header from './Components/Header/Header';
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -17,7 +18,10 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
+    
     <Router>
+        <Header />
+
       <AppRoutes/>
     </Router>
   );

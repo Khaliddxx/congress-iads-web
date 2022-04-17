@@ -15,30 +15,25 @@ import member3 from "../../Assets/Images/OrganizingComm/Zhengis Zhamashev.JPG";
 import member4 from "../../Assets/Images/OrganizingComm/Zhuldyz Kabizhankyzy.JPG";
 import member5 from "../../Assets/Images/OrganizingComm/Darina Lysakova.JPG";
 
-
 import member6 from "../../Assets/Images/OrganizingComm/Nurai Serikkyzy.JPG";
 import member7 from "../../Assets/Images/OrganizingComm/Anel Azhigaliyeva.JPG";
 import member8 from "../../Assets/Images/OrganizingComm/Darya Yavuz.png";
 import member9 from "../../Assets/Images/OrganizingComm/Asylai Nauryzova.JPG";
 import member10 from "../../Assets/Images/OrganizingComm/IMG_3203.JPG";
 
-
 import member11 from "../../Assets/Images/OrganizingComm/Aigerim Kenzhebek.JPG";
 import member12 from "../../Assets/Images/OrganizingComm/Ayazhan Shalkhybayeva.JPG";
 import member13 from "../../Assets/Images/OrganizingComm/Sardar Srazhadin.JPG";
 
-
-
 import InfoCard from "../../Components/InfoCard/InfoCard";
-import LetterCard from "../../Components/LetterCard/LetterCard";
 import Sponsers from "../../Components/Sponsers/Sponsers";
 import Footer from "../../Components/Footer/Footer";
+import PremiumPricingCard from "../../Components/PremiumPricingCard/PremiumPricingCard";
 
 function Home() {
   return (
     <>
       <div className="home">
-        <Header />
 
         {/* main section */}
 
@@ -54,19 +49,19 @@ function Home() {
             <div className="tab">
               <div className="tabComponent">
                 <div className="icon"></div>
-                <div className="link">Instagram</div>
+                <div className="link">Date</div>
               </div>
               <div className="tabComponent">
                 <div className="icon"></div>
-                <div className="link">Facebook</div>
+                <div className="link">Location</div>
               </div>
               <div className="tabComponent">
                 <div className="icon"></div>
-                <div className="link">Youtube</div>
+                <div className="link">No. of tickets</div>
               </div>
               <div className="tabComponent">
                 <div className="icon"></div>
-                <div className="link">Youtube</div>
+                <div className="link">No. of speakers</div>
               </div>
             </div>
           </div>
@@ -235,77 +230,129 @@ function Home() {
         </div>
 
         <section class="packagesSection">
+          
           <div className="packagesSectionTitle">
             <h1 className="hongKong">Congress</h1>
             <p>Packages</p>
           </div>
           <ul className="pricingCards">
             <li>
-              <PricingCard title={"Congress"}>
-                <p>
-                  Meals and Snacks from Aug 16th (dinner) to Aug 20th
-                  (breakfast)
-                </p>
-                <p>
-                  GALA Dinners (Opening & Closing ceremonies), Cultural Parties,
-                  Night Clubs and City Tours
-                </p>
-                <p>Lecture Sessions</p>
-                <p>Lecture Contest Access</p>
-                <p>Local Transportation throughout the Congress</p>
-                <p>Nights of accommodation</p>
-              </PricingCard>
+              <PricingCard
+                price="370"
+                title={"Congress"}
+                child1={
+                  <dv className="packageTitle">
+                    <div className="title">Congress</div>
+                    <div className="subTitle">Package</div>
+                  </dv>
+                }
+                child2={
+                  <div>
+                    <p>
+                      Meals and Snacks from Aug 16th (dinner) to Aug 20th
+                      (breakfast)
+                    </p>
+                    <p>
+                      GALA Dinners (Opening & Closing ceremonies), Cultural
+                      Parties, Night Clubs and City Tours
+                    </p>
+                    <p>Lecture Sessions</p>
+                    <p>Lecture Contest Access</p>
+                    <p>Local Transportation throughout the Congress</p>
+                    <p>Nights of accommodation</p>{" "}
+                  </div>
+                }
+              ></PricingCard>
             </li>
 
             <li>
               <PricingCard
-                title={"Pre-Congress + Congress"}
+              price="460"
                 color={"var(--primary-color)"}
-              >
-                <p>
-                  Meals and Snacks from Aug 14th (dinner) to Aug 20th
-                  (breakfast)
-                </p>
-                <p>
-                  GALA Dinners (Opening & Closing ceremonies), Cultural Parties,
-                  Night Clubs and City Tours
-                </p>
-                <p>Lecture Sessions</p>
-                <p>Lecture Contest Access</p>
-                <p>
-                  Local Transportation throughout the Pre-Congress and Congress
-                </p>
-                <p>Nights of accommodation</p>
-              </PricingCard>
+                child1={
+                  <dv className="packageTitle">
+                    <div style={{ marginRight: "100%" }} className="hongKong">
+                      Pre+
+                    </div>
+                    <div className="title">Congress</div>
+                    <div className="subTitle">Package</div>
+                  </dv>
+                }
+                child2={
+                  <div>
+                    <p>
+                      Meals and Snacks from Aug 14th (dinner) to Aug 20th
+                      (breakfast)
+                    </p>
+                    <p>
+                      GALA Dinners (Opening & Closing ceremonies), Cultural
+                      Parties, Night Clubs and City Tours
+                    </p>
+                    <p>Lecture Sessions</p>
+                    <p>Lecture Contest Access</p>
+                    <p>
+                      Local Transportation throughout the Pre-Congress and
+                      Congress
+                    </p>
+                    <p>Nights of accommodation</p>
+                  </div>
+                }
+              ></PricingCard>
             </li>
 
             <li>
               <PricingCard
-                title={"Congress + Post Congress"}
+              price="520"
                 color={"var(--secondary-color)"}
-              >
-                <p>
-                  Meals and Snacks from Aug 16th (dinner) to Aug 22st
-                  (breakfast)
-                </p>
-                <p>
-                  GALA Dinners (Opening & Closing ceremonies), Cultural Parties,
-                  Night Clubs and City Tours
-                </p>
-                <p>Lecture Sessions</p>
-                <p>Lecture Contest Access</p>
-                <p>
-                  Local Transportation throughout the Pre-Congress and Congress
-                </p>
-                <p>Nights of accommodation</p>
-              </PricingCard>
+                priceColor="white"
+                child1={
+                  <div className="packageTitle">
+                    <div className="title">Congress</div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        overflow: 'visible',
+                        // width: '20px'
+                        // height: '200px'
+                      }}
+                    >
+                      <p style={{color: 'var(--primary-color)'}} className="hongKong">
+                        +Post
+                      </p>
+                      <p className="subTitle"> Package</p>{" "}
+                    </div>
+                  </div>
+                }
+                child2={
+                  <div>
+                    <p>
+                      Meals and Snacks from Aug 16th (dinner) to Aug 22st
+                      (breakfast)
+                    </p>
+                    <p>
+                      GALA Dinners (Opening & Closing ceremonies), Cultural
+                      Parties, Night Clubs and City Tours
+                    </p>
+                    <p>Lecture Sessions</p>
+                    <p>Lecture Contest Access</p>
+                    <p>
+                      Local Transportation throughout the Pre-Congress and
+                      Congress
+                    </p>
+                    <p>Nights of accommodation</p>
+                  </div>
+                }
+              ></PricingCard>
             </li>
 
             <li>
-              <PricingCard title={"Locals only"}>
+              <PremiumPricingCard price="610" title={"Locals only"}>
                 <p>Access to Scientific Program</p>
                 <p>Access to Exhibition Area</p>
-              </PricingCard>
+              </PremiumPricingCard>
             </li>
           </ul>
         </section>
@@ -325,78 +372,68 @@ function Home() {
                 position="AC Chairperson"
                 img={member1}
               />
-                <MemberCard
+              <MemberCard
                 name="Zhengis Zhamashev"
                 position="head organizer"
                 img={member2}
               />
-                <MemberCard
+              <MemberCard
                 name="Abay Kalymtai"
                 position="Vice-Chair"
                 img={member3}
               />
-                <MemberCard
+              <MemberCard
                 name="Zhuldyz Kabizhankyzy"
                 position="Vice-Chair for sections"
                 img={member4}
               />
-                <MemberCard
+              <MemberCard
                 name="Darina Lysakova"
                 position="Secretary"
                 img={member5}
               />
 
-
-
-
-
-<MemberCard
+              <MemberCard
                 name="Nurai Serikkyzy"
                 position="Guides coordinator & Accommodation and Venue"
                 img={member6}
               />
-                <MemberCard
+              <MemberCard
                 name="Anel Azhigaliyeva"
                 position="Fundraising coordinator"
                 img={member7}
               />
-                <MemberCard
+              <MemberCard
                 name="Dar’ya Yavuz"
                 position="IT coordinator (Publications team, IT team, Design team)"
                 img={member8}
               />
-                <MemberCard
+              <MemberCard
                 name="Asylai Nauryzova"
                 position="IT coordinator (Publications team, IT team, Design team)"
                 img={member9}
               />
-                <MemberCard
+              <MemberCard
                 name="Dariga Ospanova"
                 position="IT coordinator (Publications team, IT team, Design team)"
                 img={member10}
               />
 
-
-
-
-<MemberCard
+              <MemberCard
                 name="Aigerim Kenzhebekz"
                 position="Social program coordinator"
                 img={member11}
               />
-                <MemberCard
+              <MemberCard
                 name="Ayazhan Shalkhybayeva"
                 position="Registration coordinator"
                 img={member12}
               />
-                <MemberCard
+              <MemberCard
                 name="Sardar Srazhadin"
                 position="Logistics coordinator"
                 img={member13}
               />
-              
-              
-
             </ul>
           </div>
         </section>

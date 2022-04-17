@@ -9,9 +9,7 @@ function InfoCard(props) {
         className="infoCard"
         style={{ backgroundColor: props.backgroundColor }}
       >
-        <div  className="title">
-    {props.children}
-        </div>
+        <div className="title">{props.children}</div>
         <div style={{ color: props.bodyTextColor }} className="bodyText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
           turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
@@ -19,7 +17,12 @@ function InfoCard(props) {
           elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
           lectus.
         </div>
-        <a style={{ backgroundColor: props.ctaColor, color: props.ctaFontColor }}  className="infoCardCTA">LEARN MORE</a>
+        <a
+          style={{ backgroundColor: props.ctaColor, color: props.ctaFontColor }}
+          className="infoCardCTA"
+        >
+          LEARN MORE
+        </a>
       </div>
     </>
   );

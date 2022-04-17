@@ -28,7 +28,7 @@ h2 {
 
 .main {
     margin: auto;
-    margin-bottom: 102px;
+    // margin-bottom: 102px;
     max-width: 1392px;
     height: 711px;
     display: flex;
@@ -100,13 +100,12 @@ h2 {
     .tab {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        padding: 19px 42px;
+        padding: 19px 0;
 
-        width: 85%;
+        width: 90%;
         position: relative;
-        height: 116px;
         bottom: 70px;
         background: #01838C;
         border-radius: 20px;
@@ -119,18 +118,16 @@ h2 {
         .tabComponent {
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: 100%;
+            // width: 100%;
 
             .icon {
                 width: 62px;
                 height: 62px;
                 border-radius: 50%;
-                background:  #C4C4C4;
+                background: #C4C4C4;
             }
 
             .link {
-
                 font-style: normal;
                 font-weight: 700;
                 font-size: 15px;
@@ -153,6 +150,8 @@ h2 {
 .explore {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: auto;
+    margin-top: 65px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,8 +272,6 @@ h2 {
         box-sizing: border-box;
         z-index: -11;
 
-
-
     }
 
 }
@@ -346,10 +343,7 @@ h2 {
     margin: auto;
     margin-top: 81px;
 
-
-
     display: flex;
-    // align-items: center;
     justify-content: space-around;
 
     .letterSectionBody {
@@ -372,7 +366,6 @@ h2 {
             font-style: normal;
             font-weight: 700;
             font-size: 25px;
-            line-height: 0px;
             /* identical to box height */
 
             letter-spacing: 0.2em;
@@ -395,7 +388,6 @@ h2 {
         width: 25%;
         height: 100%;
         margin: auto;
-
     }
 }
 
@@ -403,16 +395,19 @@ h2 {
 .schedule {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     margin-top: 81px;
     background: var(--secondary-color);
-    height: 1192px;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     background-image: url(../../Assets/Images/Ciruit.svg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
+
+    padding: 20px;
 
     // background-size: cover;
     .scheduleHeader {
@@ -420,7 +415,7 @@ h2 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 71px;
+        margin-bottom: 70px;
 
         .scheduleTitle {
 
@@ -479,9 +474,7 @@ h2 {
         }
     }
 
-    .scheduleInner {
-        height: 716px;
-    }
+    .scheduleInner {}
 
     .scheduleRow {
         display: flex;
@@ -490,15 +483,14 @@ h2 {
 
         .scheduleRowTitle {
             width: 20%;
+            padding-bottom: 22px;
 
             p {
-
-                height: 36px;
-
                 font-style: normal;
                 font-weight: 700;
                 font-size: 15px;
                 line-height: 18px;
+
                 margin: 0;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
@@ -524,7 +516,6 @@ h2 {
 
         .description {
             width: 80%;
-            height: 48px;
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -562,8 +553,8 @@ h2 {
 
     background-image: url(../../Assets/Images/sponsersBack.svg);
     background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 
     color: white;
     position: relative;
@@ -655,7 +646,7 @@ h2 {
 
     .packagesSectionTitle {
         margin: auto;
-        margin-bottom: 70px;
+        margin-bottom: 0px;
 
         .hongKong {
             font-family: 'Hong Kong Script Brush Regular';
@@ -694,10 +685,45 @@ h2 {
 
         li {
             text-align: center;
-            // width: 80%;
-            // margin: 0 1em;
-
             border-radius: 0.5em;
+        }
+
+        .packageTitle {
+
+            .hongKong {
+                position: relative;
+                line-height: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 11px;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
+            .title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #3C3C3D;
+                margin-right: auto;
+            }
+
+            .subTitle {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: white;
+            }
         }
     }
 }
@@ -778,7 +804,141 @@ input[type="submit"] {
 
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width : 768px) {
+
+    .main {
+        .tab {
+            flex-direction: column;
+
+            .tabComponent {
+                justify-content: space-between;
+                width: 80%;
+                    margin-bottom: 10px;
+
+                .link {
+                    margin: auto;
+                }
+            }
+        }
+
+        .backgroundImage {
+    
+            .mainLogo {
+                width: 300px;
+                height: 300px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+    
+                }
+            }
+        }
+
+    }
+
+    .explore {
+        margin-top: 285px;
+        height: 532px;
+
+        .exploreInner {
+            border-radius: 0;
+
+            .exploreCard {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+
+    .preCard {
+        position: absolute;
+    }
+
+    .pre {
+        filter: none;
+        height: 532px;
+        margin-top: 0px;
+
+        .preInner {
+            border-radius: 0;
+            margin-left: auto;
+        }
+
+    }
+
+
+
+    .post {
+        filter: none;
+        height: 532px;
+        margin-top: 0px;
+
+        .postInner {
+            border-radius: 0;
+            margin-right: auto;
+        }
+
+    }
+
+    .letterSection {
+        flex-direction: column;
+
+        .letterSectionCard {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    }
+
+    .schedule {
+        .scheduleRow {
+            .scheduleRowTitle {
+                width: 100%;
+            }
+
+            flex-direction: column;
+            padding: 22px;
+            border-bottom: 5px solid var(--primary-color);
+            ;
+        }
+
+        .scheduleRow:last-child {
+            border-bottom: none;
+        }
+
+        .scheduleHeader {
+            .scheduleCTA {
+                font-size: 12px;
+                width: 335px;
+
+            }
+        }
+    }
+
+    .membersSection {
+
+        .membersSectionTitle {
+            .subTitle {
+                p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+}
 
 
 

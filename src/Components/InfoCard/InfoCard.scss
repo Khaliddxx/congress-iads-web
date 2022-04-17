@@ -12,6 +12,7 @@
 
     .title{
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .bodyText {
@@ -39,5 +40,20 @@
 
 
 
+
+}
+
+@media only screen and (max-width : 768px) {
+    .infoCard {
+        width: 80%;
+        // max-width: 353px;
+        height: 278px;
+        margin: auto;
+
+        .title{
+            margin-bottom: 10px;
+        }
+
+    }
 
 }

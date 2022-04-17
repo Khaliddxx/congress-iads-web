@@ -1,6 +1,9 @@
 .header {
     background-color: white;
     min-height: 101px;
+    position: sticky;
+    top: 0;
+    z-index: 100000000000000000000000000;
 
     .cont{
         width: 1328px;

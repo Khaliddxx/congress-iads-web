@@ -45,7 +45,7 @@ function Home() {
                 <img src={CongressLogo} />
               </div>
 
-              <a className="mainCta">REGISTER NOW</a>
+              <a className="mainCta" href="#packagesSection">REGISTER NOW</a>
             </div>
             <div className="tab">
               <div className="tabComponent">
@@ -87,7 +87,7 @@ function Home() {
 
         {/* Section 2   */}
 
-        <div class="about">
+        <div id="about" class="about">
           <div class="aboutInner">
             <div className="exploreCard">
               <InfoCard
@@ -204,7 +204,7 @@ function Home() {
           <img className="letterSectionCard" src={LetterCardImage2} />
         </div>
 
-        <div className="schedule">
+        <div id="schedule" className="schedule">
           <div className="scheduleHeader">
             <div className="scheduleTitle">
               <h1 className="hongKong">Congress</h1>
@@ -230,7 +230,7 @@ function Home() {
           </div>
         </div>
 
-        <div class="packagesSection">
+        <div id="packagesSection" class="packagesSection">
           
           <div className="packagesSectionTitle">
             <h1 className="hongKong">Congress</h1>
@@ -440,7 +440,7 @@ function Home() {
         </section>
 
         <Sponsers />
-        <Footer />
+        <Footer id="footer" />
       </div>
     </>
   );

@@ -12,12 +12,12 @@ function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav className="headerInner">
-              <Nav.Link className="headerLink" href="">ABOUT</Nav.Link>
-              <Nav.Link className="headerLink"  href="">
+              <Nav.Link className="headerLink" href="#about">ABOUT</Nav.Link>
+              <Nav.Link className="headerLink"  href="#schedule">
                 PROGRAM
               </Nav.Link>
 
-              <Nav.Link className="headerLink"  href="">
+              <Nav.Link className="headerLink"  href="#packagesSection">
                 REGISTRATIONS
               </Nav.Link>
 
@@ -25,11 +25,11 @@ function Header() {
                 TRANSPORTATION
               </Nav.Link>
 
-              <Nav.Link className="headerLink" href="">
+              <Nav.Link className="headerLink" href="#footer">
                 CONTACT US
               </Nav.Link>
 
-              <Nav.Link className="headerCTA" href="">
+              <Nav.Link className="headerCTA" href="#packagesSection">
                 REGISTER
               </Nav.Link>
             </Nav>

@@ -14,6 +14,7 @@ function Footer(props) {
     <>
 
       <div
+      id="footer"
         className="footer"
         style={{ backgroundColor: props.backgroundColor }}
       >

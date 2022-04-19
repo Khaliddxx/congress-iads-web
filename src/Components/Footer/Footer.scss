@@ -39,11 +39,16 @@
 
         .icon {
             width: 62px;
-            height: 62px;
+            height:  62px;
             border-radius: 50%;
             background: #FDBE3D;
-        }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    .innerIcon{
+    }
 
+        }
         .link {
             font-style: normal;
             font-weight: 700;

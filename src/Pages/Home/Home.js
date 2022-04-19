@@ -10,8 +10,9 @@ import LetterCardImage2 from "../../Assets/Images/lc2.svg";
 import { Carousel } from "react-bootstrap";
 import CongressLogo from "../../Assets/Images/congresslogoLanding.png";
 import member1 from "../../Assets/Images/OrganizingComm/Arman Baimbetov.jpg";
-import member2 from "../../Assets/Images/OrganizingComm/Abay Kalymtai.png";
-import member3 from "../../Assets/Images/OrganizingComm/Zhengis Zhamashev.JPG";
+import member2 from "../../Assets/Images/OrganizingComm/Zhengis Zhamashev.JPG";
+
+import member3 from "../../Assets/Images/OrganizingComm/Abay Kalymtai.png";
 import member4 from "../../Assets/Images/OrganizingComm/Zhuldyz Kabizhankyzy.JPG";
 import member5 from "../../Assets/Images/OrganizingComm/Darina Lysakova.JPG";
 
@@ -229,7 +230,7 @@ function Home() {
           </div>
         </div>
 
-        <section class="packagesSection">
+        <div class="packagesSection">
           
           <div className="packagesSectionTitle">
             <h1 className="hongKong">Congress</h1>
@@ -355,7 +356,7 @@ function Home() {
               </PremiumPricingCard>
             </li>
           </ul>
-        </section>
+        </div>
 
         <section class="membersSection">
           <div className="membersSectionTitle">

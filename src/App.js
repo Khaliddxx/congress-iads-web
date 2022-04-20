@@ -24,7 +24,9 @@ const App = () => {
     <Router>
         <Header />
 
+<div style={{marginTop:'101px'}}>
       <AppRoutes/>
+      </div>
     </Router>
   );
 };

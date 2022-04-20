@@ -19,7 +19,7 @@ function Sponsers(props) {
       >
      { currentPath=='/' &&  <div  className="title">
           <p className="titleText">Our</p>
-          <p className="subTitleText">Sponsers</p>
+          <p className="subTitleText">Sponsors</p>
         </div> }
         <div className="sponsersBody">
          <img src={currentPath=='/' ?  zhermack: zhermack2} ></img>

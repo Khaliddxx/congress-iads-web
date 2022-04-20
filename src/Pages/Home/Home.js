@@ -60,7 +60,7 @@ function Home() {
                   <img src={calendar} />
                 </div>
                 <div className="link">
-                  Auguest <br></br>
+                  August <br></br>
                   16th-19th
                 </div>
               </div>
@@ -274,7 +274,9 @@ function Home() {
             </div>
             <a className="scheduleCTA"> View the complete schedule here </a>
           </div>
-          <div className="scheduleInner">
+
+        <div className="comingSoon hongKong">  Coming Soon </div>
+          {/* <div className="scheduleInner">
             {[...Array(10)].map((elementInArray, index) => (
               <div className="scheduleRow">
                 <div className="scheduleRowTitle">
@@ -289,7 +291,7 @@ function Home() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
     

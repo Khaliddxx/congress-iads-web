@@ -127,6 +127,7 @@ h2 {
         border-radius: 20px;
         margin-left: auto;
         margin-right: auto;
+        z-index: 0;
 
         box-shadow: -4px -8px 6px rgba(0, 0, 0, 0.2);
 
@@ -189,7 +190,7 @@ h2 {
 
         box-sizing: border-box;
         border-radius: 20px;
-        z-index: 10000;
+        // z-index: 10000;
 
         .exploreCard {
             margin-left: auto;
@@ -286,7 +287,7 @@ h2 {
         justify-content: center;
         margin-left: -350px;
         box-sizing: border-box;
-        z-index: -11;
+        z-index: -1;
 
     }
 
@@ -344,7 +345,7 @@ h2 {
         justify-content: center;
         margin-right: -350px;
         box-sizing: border-box;
-        z-index: -11;
+        z-index: -1;
 
         .postCard {}
     }
@@ -444,7 +445,7 @@ h2 {
                 text-align: center;
 
                 color: #FDBE3D;
-                z-index: 100;
+                // z-index: 100;
             }
 
 
@@ -591,12 +592,8 @@ h2 {
             font-weight: 400;
             font-size: 50px;
             line-height: 101px;
-            /* identical to box height */
-
             text-align: center;
-
             color: #FDBE3D;
-            z-index: 100;
         }
 
         .subTitle {

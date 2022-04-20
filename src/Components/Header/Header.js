@@ -29,7 +29,7 @@ function Header() {
                 CONTACT US
               </Nav.Link>
 
-              <Nav.Link className="headerCTA" href="/register">
+              <Nav.Link className="headerCTA" href="/form">
                 REGISTER
               </Nav.Link>
             </Nav>

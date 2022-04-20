@@ -18,8 +18,8 @@ function RegistrationCard(props) {
             <p className="body">{props.body}</p>
           </div>
           <div className="ctasRegCard">
-          <a className="ctaRegCard card1">{props.cta1}</a>
-         {props.cta2 && <a className="ctaRegCard card2">{props.cta2}</a> }
+          <a className="ctaRegCard card1"  href="/form">{props.cta1}</a>
+         {props.cta2 && <a className="ctaRegCard card2"  href="/form">{props.cta2}</a> }
         </div>
         </div>
 

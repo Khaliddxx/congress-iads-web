@@ -29,6 +29,9 @@ function RegistrationForm() {
         }
       );
     e.target.reset();
+    alert(
+      "Your results has been sent, check your email for payment instructions"
+    );
   };
 
   const [personalContactValues, setPersonalContactValues] = useState({
@@ -111,9 +114,9 @@ function RegistrationForm() {
     <>
       <div className="regFormPage container">
         <div className="regForm">
-        <form onSubmit={sendEmail}>
-
-          <div className="regForm1">
+          <form onSubmit={sendEmail}>
+            <div className="regForm1">
+              <h1>Personal & Contact Information</h1>
               <div className="row">
                 <div className="form-group col-md-6">
                   <label for="inputName">
@@ -340,21 +343,19 @@ function RegistrationForm() {
                   Example invalid custom file feedback
                 </div>
               </div> */}
-              
 
               {/* <button type="submit" className="btn btn-primary">
                   Next
                 </button> */}
 
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-             
-          </div>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+            </div>
 
-          <div className="regForm2">
-             
+            <div className="regForm2">
+              <h1>Affiliation</h1>
               <div className="row">
                 <div className="form-group col-md-6">
                   <label for="inputName">
@@ -526,66 +527,66 @@ function RegistrationForm() {
                   <div className="invalid-feedback">Name is required.</div>
                 </div>
 
-                    <div className="row">
-                <div className="form-group col-md-6">
-                  <label for="inputName">
-                    Are you the delegate of your affiliated association?
-                  </label>
+                <div className="row">
+                  <div className="form-group col-md-6">
+                    <label for="inputName">
+                      Are you the delegate of your affiliated association?
+                    </label>
 
-                  <select
-                    id="inputState"
-                    name="delegate"
-                    className="form-control"
-                    onChange={(e) =>
-                      setAffiliationValues({
-                        ...AffiliationValues,
-                        delegate: e.target.value,
-                      })
-                    }
-                    required
-                  >
-                    <option disabled selected>
-                      Choose...
-                    </option>
+                    <select
+                      id="inputState"
+                      name="delegate"
+                      className="form-control"
+                      onChange={(e) =>
+                        setAffiliationValues({
+                          ...AffiliationValues,
+                          delegate: e.target.value,
+                        })
+                      }
+                      required
+                    >
+                      <option disabled selected>
+                        Choose...
+                      </option>
 
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
 
-                  <div className="invalid-feedback">
-                    This field is required.
+                    <div className="invalid-feedback">
+                      This field is required.
+                    </div>
                   </div>
-                </div>
 
-                <div className="form-group col-md-6">
-                  <label for="inputName">
-                    Do you need an invitation letter?
-                  </label>
+                  <div className="form-group col-md-6">
+                    <label for="inputName">
+                      Do you need an invitation letter?
+                    </label>
 
-                  <select
-                    id="inputState"
-                    name="invitation_letter"
-                    className="form-control"
-                    onChange={(e) =>
-                      setAffiliationValues({
-                        ...AffiliationValues,
-                        invitation: e.target.value,
-                      })
-                    }
-                    required
-                  >
-                    <option disabled selected>
-                      Choose...
-                    </option>
+                    <select
+                      id="inputState"
+                      name="invitation_letter"
+                      className="form-control"
+                      onChange={(e) =>
+                        setAffiliationValues({
+                          ...AffiliationValues,
+                          invitation: e.target.value,
+                        })
+                      }
+                      required
+                    >
+                      <option disabled selected>
+                        Choose...
+                      </option>
 
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
 
-                  <div className="invalid-feedback">
-                    This field is required.
+                    <div className="invalid-feedback">
+                      This field is required.
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
 
@@ -593,11 +594,10 @@ function RegistrationForm() {
               <br></br>
               <br></br>
               <br></br>
-             
-          </div>
+            </div>
 
-          <div className="regForm3">
-             
+            <div className="regForm3">
+              <h1>Passport Details</h1>
               <div className="row">
                 <div className="form-group col-md-6">
                   <label>Full Name (As written in passport)</label>
@@ -619,7 +619,7 @@ function RegistrationForm() {
                 <div className="form-group col-md-6">
                   <label>Date of birth</label>
                   <input
-                  name="birthdate"
+                    name="birthdate"
                     type="date"
                     className="form-control"
                     required
@@ -773,11 +773,10 @@ function RegistrationForm() {
 
               <br></br>
               <br></br>
-             
-          </div>
+            </div>
 
-          <div className="regForm4">
-             
+            <div className="regForm4">
+              <h1>Vaccination Details</h1>
               <div className="row">
                 <div className="form-group col-md-4">
                   <label>Vaccine Name</label>
@@ -886,11 +885,10 @@ function RegistrationForm() {
               <br></br>
               <br></br>
               <br></br>
-             
-          </div>
+            </div>
 
-          <div className="regForm5">
-             
+            <div className="regForm5">
+              <h1>Package Details</h1>
               <div className="row">
                 <div className="form-group col-md-6">
                   <label for="inputName">
@@ -913,13 +911,13 @@ function RegistrationForm() {
                       Choose...
                     </option>
 
-                    <option>Package A = Congress x euros</option>
-                    <option>Package B = Precongres + Congress x euros</option>
+                    <option>Package A = Congress 370 euros</option>
+                    <option>Package B = Precongres + Congress 460 euros</option>
                     <option>
-                      Package C = Congres + Post Congress x euros3
+                      Package C = Congres + Post Congress 520 euros
                     </option>
                     <option>
-                      Package D = Precongress + Congress + Post Congress x euros
+                      Package D = Precongress + Congress + Post Congress 610 euros
                     </option>
                   </select>
 
@@ -1055,11 +1053,10 @@ function RegistrationForm() {
               <br></br>
               <br></br>
               <br></br>
-             
-          </div>
+            </div>
 
-          <div className="regForm5">
-             
+            <div className="regForm5">
+              <h1>Consent</h1>
               <div className="row">
                 <div class="form-group">
                   <div class="form-check">
@@ -1156,9 +1153,8 @@ function RegistrationForm() {
               </button>
               <br></br>
               <br></br>
-          </div>
-
-            </form>
+            </div>
+          </form>
         </div>
       </div>
     </>

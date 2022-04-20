@@ -12,7 +12,7 @@ function PricingCard(props) {
         <div className="features">{props.child2}</div>
 
         <div  className="cta">
-          <button style={{backgroundColor: props.color}}>Choose Package</button>
+          <a  href="/form" style={{backgroundColor: props.color}}>Choose Package</a>
         </div>
       </div>
     </>

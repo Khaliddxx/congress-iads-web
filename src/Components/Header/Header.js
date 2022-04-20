@@ -7,17 +7,17 @@ function Header() {
     <>
       <Navbar className="header" collapseOnSelect expand="lg" >
         <Container className="cont" fluid>
-          <Navbar.Brand className="logo" href="#home"><img src={congressLogo} /></Navbar.Brand>
+          <Navbar.Brand className="logo" href="/"><img src={congressLogo} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav className="headerInner">
-              <Nav.Link className="headerLink" href="#about">ABOUT</Nav.Link>
-              <Nav.Link className="headerLink"  href="#schedule">
+              <Nav.Link className="headerLink" href="/#about">ABOUT</Nav.Link>
+              <Nav.Link className="headerLink"  href="/#schedule">
                 PROGRAM
               </Nav.Link>
 
-              <Nav.Link className="headerLink"  href="#packagesSection">
+              <Nav.Link className="headerLink"  href="/register">
                 REGISTRATIONS
               </Nav.Link>
 
@@ -25,11 +25,11 @@ function Header() {
                 TRANSPORTATION
               </Nav.Link>
 
-              <Nav.Link className="headerLink" href="#footer">
+              <Nav.Link className="headerLink" href="/#footer">
                 CONTACT US
               </Nav.Link>
 
-              <Nav.Link className="headerCTA" href="#packagesSection">
+              <Nav.Link className="headerCTA" href="/register">
                 REGISTER
               </Nav.Link>
             </Nav>

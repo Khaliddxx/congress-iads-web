@@ -5,7 +5,7 @@ import Header from "../../Components/Header/Header";
 import "./Home.scss";
 import kazEmb from "../../Assets/Images/kazemb.png";
 import kazWallpaper1 from "../../Assets/Images/kazwallpaper.jpg";
-import LetterCardImage1 from "../../Assets/Images/lc1.svg";
+import LetterCardImage1 from "../../Assets/Images/lc1.png";
 import LetterCardImage2 from "../../Assets/Images/lc2.svg";
 import { Carousel } from "react-bootstrap";
 import CongressLogo from "../../Assets/Images/congresslogoLanding.png";
@@ -26,6 +26,11 @@ import member11 from "../../Assets/Images/OrganizingComm/Aigerim Kenzhebek.JPG";
 import member12 from "../../Assets/Images/OrganizingComm/Ayazhan Shalkhybayeva.JPG";
 import member13 from "../../Assets/Images/OrganizingComm/Sardar Srazhadin.JPG";
 
+import calendar from "../../Assets/Images/TabIcons/calendar.svg";
+import location from "../../Assets/Images/TabIcons/Vector.svg";
+import ticket from "../../Assets/Images/TabIcons/Ticket.svg";
+import microphone from "../../Assets/Images/TabIcons/microphone.svg";
+
 import InfoCard from "../../Components/InfoCard/InfoCard";
 import Sponsers from "../../Components/Sponsers/Sponsers";
 import Footer from "../../Components/Footer/Footer";
@@ -35,7 +40,6 @@ function Home() {
   return (
     <>
       <div className="home">
-
         {/* main section */}
 
         <div className="main">
@@ -45,24 +49,40 @@ function Home() {
                 <img src={CongressLogo} />
               </div>
 
-              <a className="mainCta" href="#packagesSection">REGISTER NOW</a>
+              <a className="mainCta" href="#packagesSection">
+                REGISTER NOW
+              </a>
             </div>
             <div className="tab">
               <div className="tabComponent">
-                <div className="icon"></div>
-                <div className="link">Date</div>
+                <div className="icon">
+                  <img src={calendar} />
+                </div>
+                <div className="link">
+                  Auguest <br></br>
+                  16th-19th
+                </div>
               </div>
               <div className="tabComponent">
-                <div className="icon"></div>
-                <div className="link">Location</div>
+                <div className="icon">
+                  <img src={location} />
+                </div>
+                <div className="link">Kazakhstan</div>
               </div>
               <div className="tabComponent">
-                <div className="icon"></div>
-                <div className="link">No. of tickets</div>
+                <div className="icon">
+                  <img src={ticket} />
+                </div>
+                <div className="link">
+                  150 <br></br>
+                  TICKETS
+                </div>
               </div>
               <div className="tabComponent">
-                <div className="icon"></div>
-                <div className="link">No. of speakers</div>
+                <div className="icon">
+                  <img src={microphone} />
+                </div>
+                <div className="link">SPEAKERS</div>
               </div>
             </div>
           </div>
@@ -77,6 +97,7 @@ function Home() {
                 backgroundColor="white"
                 bodyTextColor="#313030"
                 ctaColor={"var(--primary-color)"}
+                text="Kazakhstan is the world’s ninth largest country where East and West have merged in a unique harmony under an endlessly blue sky. The word of a Turkic origin “Kazakh” means “Free man”- this is connected with the fact that since the very ancient times Kazakhstan has been inhabited by freedom-loving nomads."
               >
                 <p>Explore</p>
                 <h1 className="hongKong">Kazakhstan</h1>
@@ -94,6 +115,18 @@ function Home() {
                 backgroundColor="#01838C"
                 bodyTextColor="white"
                 ctaColor={"var(--primary-color)"}
+                text={
+                  <div>
+                    <strong>Kazakh National Medical University</strong>, named after S.D.
+                    Asfendiyarov, well-known scientists and teachers of
+                    Kazakhstan, academicians of the National Academy of Sciences
+                    of the Republic of Kazakhstan, the Russian Academy of
+                    Medical Sciences, the Academy of Preventive Medicine of the
+                    Republic of Kazakhstan, International Academies, honored
+                    workers of science and education, honored doctors and
+                    pharmacists work.
+                  </div>
+                }
               >
                 <p style={{ color: "white" }}>About the</p>
                 <h1
@@ -109,7 +142,21 @@ function Home() {
 
         <div class="pre">
           <div className="preCard">
-            <InfoCard backgroundColor="#FDBE3D">
+            <InfoCard
+              backgroundColor="#FDBE3D"
+              text={
+                <div>
+                  The <strong>'Medeo'</strong> complex is located on the border
+                  of the city of Almaty at an altitude of 1691 meters above sea
+                  level. Beautiful views of the tops of the Zailiysky Ala Tau
+                  mountains, clean air, soft sun - Almaty residents of all ages
+                  and occupations love to spend their time here. Medeo got its
+                  name in honor of a nomad who lived here at the beginning of
+                  the twentieth century and founded an aul (village) in that
+                  area.
+                </div>
+              }
+            >
               <h1
                 style={{ color: "var(--secondary-color)" }}
                 className="hongKong"
@@ -130,6 +177,7 @@ function Home() {
               bodyTextColor="white"
               ctaColor={"var(--secondary-color)"}
               ctaFontColor={"white"}
+              text="Among the snow-white mountain peaks, where the Zailiysky Alatau and Kungei-Alatau ridges join, in a small bridge of Kolsai gorge, there are hidden natural diamonds of the nature of picturesque Kazakhstan - Kolsai Lakes. Surrounded by majestic centuries-old fir trees, the three lakes shine in the light of the bright mountain sun, completely justifying their title 'Pearl of the Northern Tien Shan'."
             >
               <h1
                 style={{ color: "var(--primary-color)" }}
@@ -147,28 +195,41 @@ function Home() {
 
           <div className="letterSectionBody">
             <h1 className="title">Dr. Huthaifa Abdul qader </h1>
-            <p className="hongKong">Dear readers, </p>
+            <p className="hongKong">Dear IADS Members & Alumni, </p>
             <p className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. Praesent auctor purus
-              luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-              rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-              vel bibendum lorem. Morbi convallis convallis diam sit amet
-              lacinia. Aliquam in elementum tellus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Etiam eu turpis molestie, dictum est
-              a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-              risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-              Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
-              scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
-              rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi
-              convallis convallis diam sit amet lacinia. Aliquam in elementum
-              tellus.
+              Greetings from Switzerland! <br></br> We are very thrilled to
+              announce our official 69th Annual Congress campaign for 2022. This
+              event marks the first formal IADS Annual Congress after the
+              pandemic crisis. Our network of dental students and early-career
+              professionals have been waiting for this congregation for a long
+              time and it is now finally taking place in the city of Almaty in
+              Kazakhstan, where the Alma-Ata Declaration of 1978 emerged as a
+              major milestone of the twentieth century in the field of public
+              health.
+              <br></br>
+              <br></br>
+              The Local Organizing Committee (LOC) is fully amenable to lay out
+              all aspects necessary for the successful implementation of this
+              global dental students congress under the patronage of IADS
+              Executive Committee. Both teams will work collectively with the
+              spirit of teamwork and professionalism to bring about one of the
+              most well-organized and informative events that gathers students
+              and young dentists under one roof. The theme of this AC is
+              Artificial Intelligence & Digitalization in Dentistry so you do
+              not want to miss this!
+              <br></br>
+              <br></br>
+              We are very delighted to see you all joining our pre-congress trip
+              to the mountain resort “Modeo”, attending our General Assembly &
+              Scientific Program at KAZANMU (Kazakh National Medical
+              University), and coming along to our post-congress experience at
+              Kolsay Lakes where we will be spending our last night together! So
+              pack your bags for a once in a lifetime experience!
+              <br></br>
+              <br></br>
+              <strong>Huthaifa Abdul Qader, DDS </strong>
+              <br></br>
+              <strong>IADS President 2021/22</strong>
             </p>
           </div>
         </div>
@@ -176,28 +237,28 @@ function Home() {
         <div style={{ textAlign: "right" }} class="letterSection">
           <div className="letterSectionBody">
             <h1 className="title">Zhengis Zhamashev</h1>
-            <p className="hongKong">Dear readers, </p>
+            <p className="hongKong">Greetings to all, Dear Friends! </p>
             <p className="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. Praesent auctor purus
-              luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-              rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-              vel bibendum lorem. Morbi convallis convallis diam sit amet
-              lacinia. Aliquam in elementum tellus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Etiam eu turpis molestie, dictum est
-              a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-              risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-              Maecenas eget condimentum velit, sit amet feugiat lectus. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
-              scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
-              rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi
-              convallis convallis diam sit amet lacinia. Aliquam in elementum
-              tellus.
+              We set ourselves big goals and do our best to achieve them. We
+              joined IADS only last year, and already this year we’re preparing
+              for a grand 69th Annual Congress of IADS in the beautiful city of
+              Almaty, located in the south of Kazakhstan. The IADS Executive
+              Committee and the Local Organizing Committee are preparing
+              something unusual and large-scale for you. We believe that with
+              every action we take, we contribute to the community of young
+              dentists around the world. The Kazakhstan Association of Dental
+              Young is one of the youngest associations, but it consists of the
+              most powerful dental enthusiasts who create new directions in
+              science, business and public health. Together is better.
+              <br></br>
+              <br></br>
+              Best regards,
+              <br></br>
+              <strong>
+                President of Kazakhstan Association of Dental Youth
+              </strong>
+              <br></br>
+              <strong>Zhengis Zhamashev</strong>
             </p>
           </div>
 
@@ -231,7 +292,6 @@ function Home() {
         </div>
 
         <div id="packagesSection" class="packagesSection">
-          
           <div className="packagesSectionTitle">
             <h1 className="hongKong">Congress</h1>
             <p>Packages</p>
@@ -268,7 +328,7 @@ function Home() {
 
             <li>
               <PricingCard
-              price="460"
+                price="460"
                 color={"var(--primary-color)"}
                 child1={
                   <dv className="packageTitle">
@@ -303,7 +363,7 @@ function Home() {
 
             <li>
               <PricingCard
-              price="520"
+                price="520"
                 color={"var(--secondary-color)"}
                 priceColor="white"
                 child1={
@@ -313,14 +373,17 @@ function Home() {
                       style={{
                         display: "flex",
                         flexDirection: "row",
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        overflow: 'visible',
+                        justifyContent: "center",
+                        alignItems: "center",
+                        overflow: "visible",
                         // width: '20px'
                         // height: '200px'
                       }}
                     >
-                      <p style={{color: 'var(--primary-color)'}} className="hongKong">
+                      <p
+                        style={{ color: "var(--primary-color)" }}
+                        className="hongKong"
+                      >
                         +Post
                       </p>
                       <p className="subTitle"> Package</p>{" "}

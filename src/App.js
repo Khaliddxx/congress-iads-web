@@ -7,10 +7,12 @@ import {
   useRoutes,
 } from "react-router-dom";
 import Header from './Components/Header/Header';
+import Registeration from './Pages/Registeration/Registeration';
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
+    { path: "/registeration", element: <Registeration /> },
     // ...
   ]);
   return routes;

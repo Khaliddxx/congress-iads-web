@@ -7,7 +7,7 @@ import gold from "../../Assets/Images/Sponsers/gold.svg";
 import KSA from "../../Assets/Images/Sponsers/KSA.svg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube, faInstagram, faFacebook, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
 function Footer(props) {
   return (
@@ -19,17 +19,25 @@ function Footer(props) {
         style={{ backgroundColor: props.backgroundColor }}
       >
         <div className="footerBody">
-          <div className="socialMediaLink">
-            <div className="icon"><FontAwesomeIcon color="#2D2D2D" size="2x" icon={faInstagram} /></div>
-            <div className="link">Instagram</div>
+        <div className="socialMediaLink">
+            <div className="icon"><FontAwesomeIcon color="white" size="2x" icon={faFacebook} /></div>
           </div>
+
           <div className="socialMediaLink">
-            <div className="icon"><FontAwesomeIcon color="#2D2D2D" size="2x" icon={faFacebook} /></div>
-            <div className="link">Facebook</div>
+            <div className="icon"><FontAwesomeIcon color="white" size="2x" icon={faTwitter} /></div>
           </div>
+
+
           <div className="socialMediaLink">
-            <div className="icon"><FontAwesomeIcon color="#2D2D2D" size="2x" icon={faYoutube} /></div>
-            <div className="link">Youtube</div>
+            <div className="icon"><FontAwesomeIcon color="white" size="2x" icon={faInstagram} /></div>
+          </div>
+         
+          <div className="socialMediaLink">
+            <div className="icon"><FontAwesomeIcon color="white" size="2x" icon={faYoutube} /></div>
+          </div>
+
+          <div className="socialMediaLink">
+            <div className="icon"><FontAwesomeIcon color="white" size="2x" icon={faPinterest} /></div>
           </div>
         </div>
 

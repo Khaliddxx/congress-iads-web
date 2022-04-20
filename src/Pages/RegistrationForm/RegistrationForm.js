@@ -456,7 +456,7 @@ function RegistrationForm() {
               </div>
 
               <div className="row">
-                <div className="form-group col-md-6">
+                <div className="form-group col-md-12">
                   <label for="inputName">Are you an IADS member?</label>
 
                   <select
@@ -484,6 +484,34 @@ function RegistrationForm() {
                   </div>
                 </div>
               </div>
+              <br></br>
+              {AffiliationValues.IADSmember == "No" && (
+                <div className="row">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        style={{ marginRight: "10px" }}
+                        // name="extra_price_consent"
+                        class="form-check-input"
+                        type="checkbox"
+                        value={PackageValues.consent}
+                        id="invalidCheck7"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck7">
+                        I understand that upon not being an IADS member, if I
+                        still wish to proceed with my registration I consent to
+                        being approached and following through with the
+                        procedures of obtaining a personal membership with a
+                        yearly fee of 50 euros
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               <div className="row">
                 <div className="form-group col-md-6">
@@ -917,7 +945,8 @@ function RegistrationForm() {
                       Package C = Congres + Post Congress 520 euros
                     </option>
                     <option>
-                      Package D = Precongress + Congress + Post Congress 610 euros
+                      Package D = Precongress + Congress + Post Congress 610
+                      euros
                     </option>
                   </select>
 
@@ -955,6 +984,8 @@ function RegistrationForm() {
                 </div>
               </div>
 
+              <br></br>
+
               {PackageValues.roomType == "Single Room" && (
                 <div className="row">
                   <div class="form-group">
@@ -962,7 +993,7 @@ function RegistrationForm() {
                       <input
                         style={{ marginRight: "10px" }}
                         name="extra_price_consent"
-                        class="form-check-input is-invalid"
+                        class="form-check-input"
                         type="checkbox"
                         value={PackageValues.consent}
                         id="invalidCheck3"
@@ -1062,7 +1093,7 @@ function RegistrationForm() {
                   <div class="form-check">
                     <input
                       style={{ marginRight: "10px" }}
-                      class="form-check-input is-invalid"
+                      class="form-check-input"
                       type="checkbox"
                       value={ConsentValues.notComplete}
                       id="invalidCheck4"
@@ -1085,7 +1116,7 @@ function RegistrationForm() {
                   <div class="form-check">
                     <input
                       style={{ marginRight: "10px" }}
-                      class="form-check-input is-invalid"
+                      class="form-check-input "
                       type="checkbox"
                       value={ConsentValues.terms}
                       id="invalidCheck5"
@@ -1114,7 +1145,7 @@ function RegistrationForm() {
                   <div class="form-check">
                     <input
                       style={{ marginRight: "10px" }}
-                      class="form-check-input is-invalid"
+                      class="form-check-input "
                       type="checkbox"
                       value={ConsentValues.codeOfConduct}
                       id="invalidCheck6"

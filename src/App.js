@@ -12,12 +12,14 @@ import Sponsers from "./Components/Sponsers/Sponsers";
 import Footer from "./Components/Footer/Footer";
 
 import { useLocation } from 'react-router-dom';
+import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
 
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/register", element: <Registration /> },
+    { path: "/form", element: <RegistrationForm /> },
   ]);
   return routes;
 };
@@ -27,7 +29,7 @@ const App = () => {
     <Router>
       <Header />
 
-      <div style={{ marginTop: "101px" }}>
+      <div>
         <AppRoutes />
 
       </div>

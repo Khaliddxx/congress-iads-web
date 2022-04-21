@@ -13,6 +13,7 @@ import Footer from "./Components/Footer/Footer";
 
 import { useLocation } from 'react-router-dom';
 import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
+import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
 
 
 const AppRoutes = () => {
@@ -20,6 +21,7 @@ const AppRoutes = () => {
     { path: "/", element: <Home /> },
     { path: "/register", element: <Registration /> },
     { path: "/form", element: <RegistrationForm /> },
+    { path: "/visa", element: <VisaRequirements /> },
   ]);
   return routes;
 };

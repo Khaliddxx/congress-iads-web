@@ -339,8 +339,8 @@ function Home() {
                 img={member3}
               />
               <MemberCard
-                name="Zhuldyz Kabizhankyzy"
-                position="Vice-Chair for sections"
+                name="Abylai Orazaly"
+                position="Activity Co-ordinator"
                 img={member4}
               />
               <MemberCard

@@ -25,18 +25,18 @@ function Packages(props) {
                 }
                 child2={
                   <div>
+
                     <p>
-                      Meals and Snacks from Aug 16th (dinner) to Aug 20th
-                      (breakfast)
+                    Meals and Snacks from Aug 16th (dinner) to Aug 20th (breakfast)
                     </p>
                     <p>
-                      GALA Dinners (Opening & Closing ceremonies), Cultural
-                      Parties, Night Clubs and City Tours
+                    GALA Dinners, Opening & Closing Ceremonies
                     </p>
-                    <p>Lecture Sessions</p>
+                    <p>Training Sessions & Lecturess</p>
                     <p>Lecture Contest Access</p>
-                    <p>Local Transportation throughout the Congress</p>
-                    <p>Nights of accommodation</p>{" "}
+                    <p>Dental Olympics Access</p>
+                    <p>5 Nights of accommodation</p>
+                    <p>Local Transportation throughout the Pre-Congress and Congress</p>
                   </div>
                 }
               ></PricingCard>
@@ -56,22 +56,25 @@ function Packages(props) {
                   </dv>
                 }
                 child2={
+
+
                   <div>
                     <p>
                       Meals and Snacks from Aug 14th (dinner) to Aug 20th
                       (breakfast)
                     </p>
                     <p>
-                      GALA Dinners (Opening & Closing ceremonies), Cultural
-                      Parties, Night Clubs and City Tours
+                    GALA Dinners, Opening & Closing Ceremonies
                     </p>
-                    <p>Lecture Sessions</p>
+                    <p>Training Sessions & Lectures</p>
                     <p>Lecture Contest Access</p>
+                    <p>Dental Olympics Access</p>
+                    <p>6 Nights of Accommodation</p>
                     <p>
                       Local Transportation throughout the Pre-Congress and
                       Congress
                     </p>
-                    <p>Nights of accommodation</p>
+                    <p>1 day pre-congress activities in Medeo </p>
                   </div>
                 }
               ></PricingCard>
@@ -107,22 +110,24 @@ function Packages(props) {
                   </div>
                 }
                 child2={
+
                   <div>
                     <p>
                       Meals and Snacks from Aug 16th (dinner) to Aug 22st
                       (breakfast)
                     </p>
                     <p>
-                      GALA Dinners (Opening & Closing ceremonies), Cultural
-                      Parties, Night Clubs and City Tours
+                    GALA Dinners, Opening & Closing Ceremonies
                     </p>
-                    <p>Lecture Sessions</p>
+                    <p>Training Sessions & Lectures</p>
                     <p>Lecture Contest Access</p>
+                    <p>Dental Olympics Access </p>
+                    <p>6 Nights of accommodation</p>
                     <p>
                       Local Transportation throughout the Pre-Congress and
                       Congress
                     </p>
-                    <p>Nights of accommodation</p>
+                    <p>1 day post-congress activities in Kolsay Lake </p>
                   </div>
                 }
               ></PricingCard>
@@ -130,8 +135,16 @@ function Packages(props) {
 
             <li>
               <PremiumPricingCard price="610" title={"Locals only"}>
-                <p>Access to Scientific Program</p>
-                <p>Access to Exhibition Area</p>
+              
+
+                <p>Meals and Snacks from Aug 14th (dinner) to Aug 21st (breakfast)</p>
+                <p>GALA Dinners, Opening & Closing Ceremonies</p>
+                <p>Training Sessions & Lectures</p>
+                <p>Dental Olympics Access</p>
+                <p>7 Nights of Accommodation</p>
+                <p>Local Transportation throughout the Pre-Congress and Congress</p>
+                <p>1 day pre-congress activities in Medeo </p>
+                <p>1 day post-congress activities in Kolsay Lake </p>
               </PremiumPricingCard>
             </li>
           </ul>

@@ -19,11 +19,11 @@ function PremiumPricingCard(props) {
         <div className="features">{props.children}</div>
 
         <div className="cta">
-          <button style={{ backgroundColor: props.color }}>
-            <a style={{ textDecoration: "none", color: "black" }} href="/form">
-              Choose Package{" "}
-            </a>
-          </button>
+          <a href="/form">
+            <button style={{ backgroundColor: props.color }}>
+              Choose Package
+            </button>
+          </a>
         </div>
       </div>
     </>

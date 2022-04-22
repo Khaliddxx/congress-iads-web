@@ -18,6 +18,7 @@ function Registration() {
               subTitle="Packages"
               body="The congress offers different packages for you to choose from "
               cta1="LEARN MORE"
+              cta1href="#packages"
             />
 
             <RegistrationCard
@@ -25,6 +26,7 @@ function Registration() {
               subTitle="Registration"
               body="Ready to embark on an all-new experience in the latest advances in dentistry?"
               cta1="REGISTER NOW"
+              cta1href="/form"
             />
 
             <RegistrationCard
@@ -69,7 +71,9 @@ function Registration() {
           <a className="refCta">Learn More</a>
         </div>
 
-        <Packages />
+        <div id="packages">
+          <Packages />
+        </div>
       </div>
     </>
   );

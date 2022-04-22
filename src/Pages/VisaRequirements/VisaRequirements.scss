@@ -2,7 +2,8 @@
     width: 100%;
 
     .visaTitle {
-        margin-left: 70px;
+        margin-left: 40px;
+
         .visaTitleText {
             font-style: normal;
             font-weight: 700;
@@ -22,7 +23,7 @@
             font-weight: 400;
             font-size: 50px;
             line-height: 0px;
-            margin-left: 70px;
+            margin-left: 45px;
             margin-top: -10px;
             /* identical to box height */
 
@@ -44,10 +45,136 @@
         border-radius: 20px;
     }
 
+
+
+    .visaCards {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .border1 {
+            background: #01838C;
+            border-radius: 20px;
+            width: 8px;
+            height: 486px;
+            margin-top: -40px;
+        }
+
+        .visaCard {
+            width: 40%;
+            // max-width: 50%;
+
+            .visacardTitles {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .visacardtitle {
+                    font-size: 40px;
+                    line-height: 0px;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    color: #3F3F3F;
+
+                }
+
+                .visacardsubtitle {
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #FDBE3D;
+
+                }
+            }
+
+            .visacardBody {
+                margin-top: 50px;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .visatableTitle {
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+
+        text-align: center;
+
+        color: #3F3F3F;
+    }
+
+
+    table {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        thead {
+            background: #01838C;
+            overflow: hidden;
+            color: white;
+            border: none;
+
+        }
+
+        tr {}
+    }
+
+
 }
 
 
 @media only screen and (max-width : 1200px) {}
 
 
-@media only screen and (max-width : 992px) {}
+@media only screen and (max-width : 992px) {
+
+    .visaPage {
+        width: 100%;
+
+        .visaCards {
+            margin-top: 60px;
+            flex-direction: column;
+            align-items: center;
+
+            .border1 {
+                background: #01838C;
+                border-radius: 20px;
+                width: 80%;
+                height: 8px;
+                margin-top: 20px;
+                margin-bottom: 60px;
+            }
+
+            .visaCard {
+                width: 80%;
+
+                .visacardTitles {
+
+                    .visacardtitle {
+                        font-size: 35px;
+                    }
+
+                    .visacardsubtitle {
+                        font-size: 42px;
+
+                    }
+                }
+
+                .visacardBody {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

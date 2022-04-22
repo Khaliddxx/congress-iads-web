@@ -39,15 +39,16 @@
 
         .icon {
             width: 62px;
-            height:  62px;
+            height: 62px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-    .innerIcon{
-    }
+
+            .innerIcon {}
 
         }
+
         .link {
             font-style: normal;
             font-weight: 700;
@@ -60,7 +61,7 @@
             text-transform: uppercase;
 
             color: #FFFFFF;
-            margin-left: 10px;
+            margin-left: 0px;
         }
     }
 }

@@ -17,8 +17,6 @@
         display: flex;
         // overflow-x: scroll;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
         justify-content: space-around;
     }
 
@@ -74,11 +72,14 @@
     
     
         .sponsersBody {
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
         }
 
         .sponsersBody *{
-            padding: 25px;
+            
+            padding: 25px 0;
         }
 
         .title {

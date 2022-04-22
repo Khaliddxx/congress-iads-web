@@ -748,7 +748,7 @@ function RegistrationForm() {
 
                 <div className="form-group col-md-4">
                   <label for="inputName">
-                    Do you need a letter for visa clearance?
+                    Do you need a letter for <a target="_blank" href="/visa">visa</a> clearance?
                   </label>
 
                   <select
@@ -939,13 +939,13 @@ function RegistrationForm() {
                       Choose...
                     </option>
 
-                    <option>Package A = Congress 370 euros</option>
-                    <option>Package B = Precongres + Congress 460 euros</option>
+                    <option>Package A = Congress 380 euros</option>
+                    <option>Package B = Precongres + Congress 450 euros</option>
                     <option>
                       Package C = Congres + Post Congress 520 euros
                     </option>
                     <option>
-                      Package D = Precongress + Congress + Post Congress 610
+                      Package D = Precongress + Congress + Post Congress 590
                       euros
                     </option>
                   </select>

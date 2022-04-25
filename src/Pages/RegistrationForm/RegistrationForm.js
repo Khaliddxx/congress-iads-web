@@ -8,26 +8,72 @@ import "./RegistrationForm.scss";
 import countries from "../../Shared/Data/countries.json";
 import Select from "react-select";
 import emailjs from "emailjs-com";
+import axios from "axios";
 
 function RegistrationForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_zhe1pvp",
-        "template_08ibrp4",
-        e.target,
-        "Blp53EzBsHt7ji3lO"
+    const data = {
+      Name: personalContactValues.fullName,
+      Gender: personalContactValues.gender,
+      Country: personalContactValues.conutry,
+      Email: personalContactValues.email,
+      Phone_No: personalContactValues.phoneNumber,
+      Whatsapp_No: personalContactValues.whatsappNumber,
+      Instagram: personalContactValues.instagram,
+      Facebook: personalContactValues.facebookUrl,
+      Emergency_Con: personalContactValues.emergencyContactName,
+      Emergency_No: personalContactValues.emergencyContactNumber,
+
+      Study_Country: AffiliationValues.conutry,
+      Uni_Name: AffiliationValues.university,
+      Years_of_Study: AffiliationValues.yearStudies,
+      Graduation_Date: AffiliationValues.yearGraduation,
+      IADS_Member: AffiliationValues.IADSmember,
+      IADS_Association: AffiliationValues.IADSmemberAssociation,
+      Delegate: AffiliationValues.delegate,
+      Invitation: AffiliationValues.invitation,
+
+      Passport_No: PassportValues.passportNumber,
+      Passport_Issue: PassportValues.passportIssueDate,
+      Passport_Expiry: PassportValues.passportExpiryDate,
+      Visa_Clearance: PassportValues.visaClearance,
+
+      Vaccine: VaccineValues.vaccineName,
+      Doses: VaccineValues.administeredDoses,
+
+      Package: PackageValues.package,
+      Room_Type: PackageValues.roomType,
+      Roommate: PackageValues.roommate,
+      Allergies: PackageValues.Allergies,
+      Dietary: PackageValues.dietary,
+    };
+
+    axios
+      .post(
+        "https://sheet.best/api/sheets/2224fd55-26ba-4013-bd62-dfcfa1fe0b3f",
+        data
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((response) => {
+        console.log(response);
+      });
+
+    // emailjs
+    //   .sendForm(
+    //     "service_zhe1pvp",
+    //     "template_08ibrp4",
+    //     e.target,
+    //     "Blp53EzBsHt7ji3lO"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     e.target.reset();
     alert(
       "Your results has been sent, check your email for payment instructions"
@@ -748,7 +794,11 @@ function RegistrationForm() {
 
                 <div className="form-group col-md-4">
                   <label for="inputName">
-                    Do you need a letter for <a target="_blank" href="/visa">visa</a> clearance?
+                    Do you need a letter for{" "}
+                    <a target="_blank" href="/visa">
+                      visa
+                    </a>{" "}
+                    clearance?
                   </label>
 
                   <select
@@ -1086,7 +1136,7 @@ function RegistrationForm() {
               <br></br>
             </div>
 
-            <div className="regForm5">
+            <div className="regForm6">
               <h1>Consent</h1>
               <div className="row">
                 <div class="form-group">

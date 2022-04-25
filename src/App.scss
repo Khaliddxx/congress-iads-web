@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Hong Kong Script Brush Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Hong Kong Script Brush Regular'), url('../src/Assets/Fonts/Hong Kong Script Brush.woff') format('woff');
+}
+
+body{
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --primary-color: #FDBE3D;
+  --secondary-color: #01838C;
+  --black-color: #2d2d2d;
+  --grey-color: #6d6d6d;
+}
+
+
+@keyframes App-logo-spin {
+
+}

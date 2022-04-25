@@ -1,0 +1,59 @@
+.infoCard {
+    width: 404px;
+    height: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 25px 41px;
+    // z-index: 10;
+
+    .title{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bodyText {
+        font-weight: 400;
+        font-size: 10px;
+    }   
+
+    .infoCardCTA {
+        width: 140px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 100px;
+        letter-spacing: 0.2em;
+        font-weight: 700;
+        font-size: 10px;
+        text-transform: capitalize;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: auto;
+        color: #272727;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width : 768px) {
+    .infoCard {
+        width: 80%;
+        // max-width: 353px;
+        height: 278px;
+        margin: auto;
+
+        .title{
+            margin-bottom: 10px;
+        }
+
+    }
+
+}

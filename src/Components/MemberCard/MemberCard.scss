@@ -1,0 +1,55 @@
+.memberCard {
+    height: 268px;
+    margin-bottom: 10px;
+    width: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-direction: column;
+
+
+
+    .image {
+        display: flex;
+        width: 140px;
+        height: 135px;
+        top: 0;
+        overflow: hidden;
+        border-radius: 20px;
+
+        // margin: auto;
+
+
+        img {
+            width: 100%;
+            margin: auto;
+            margin-top: -10px;
+        }
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        color: var(--primary-color);
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        // margin-top: -60px;
+
+    }
+
+
+    .position {
+        color: white;
+        text-transform: uppercase;
+        height: 15%;
+        text-align: center;
+        // margin-top: -50px;
+
+    }
+}

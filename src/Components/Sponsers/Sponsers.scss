@@ -1,0 +1,95 @@
+
+
+.sponsers {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 41px;
+
+
+
+    .sponsersBody {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        // overflow-x: scroll;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .title {
+        .titleText {
+            text-align: center;
+            font-family: 'Hong Kong Script Brush Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            text-align: center;
+            margin: 0;
+
+
+            color: #01838C;
+        }
+
+        .subTitleText {
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            margin-top: -25px;
+            /* identical to box height */
+            
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            
+            color: #3F3F3F;
+        }
+    }
+
+    .bodyText {
+        font-weight: 400;
+        font-size: 10px;
+
+        font-family: 'Hong Kong Script Brush Regular';
+
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width : 768px) {
+
+    .sponsers {
+        width: 100%;
+    
+    
+        .sponsersBody {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .sponsersBody *{
+            
+            padding: 25px 0;
+        }
+
+        .title {
+            .subTitleText {
+                font-size: 30px;
+            }
+        }
+
+    }
+
+}

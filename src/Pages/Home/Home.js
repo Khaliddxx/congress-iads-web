@@ -279,28 +279,41 @@ function Home() {
           <div className="scheduleInner">
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Pre-congress </p>
+                <p style={{color: '#8FFF37'}}>Pre-congress </p>
                 <p className="date">August 14</p>
               </div>
               <div className="border1"></div>
-              <div className="description">Arrivals and Check-in</div>
+              <div className="description">
+                <span style={{color: '#8FFF37'}}>Pre-Congress attendees:</span> Arrivals and Check-in
+              </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Pre-congress </p>
+                <p style={{color: '#8FFF37'}}>Pre-congress </p>
                 <p className="date">August 15</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                Breakfast | Medeo Mountain Resort | Hiking | Lunch | Opening
-                Ceremony
+              <span style={{color: '#8FFF37'}}>Pre-Congress attendees:</span>  Breakfast | Medeo Mountain Resort |
+                Hiking | Lunch
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Congress </p>
+                <p style={{color: '#FDBE3D'}}>Congress </p>
+                <p className="date">August 15</p>
+              </div>
+              <div className="border1"></div>
+              <div className="description">
+              <span style={{color: '#FDBE3D'}}>Congress attendees:</span> Arrivals and Check-in Opening Ceremony
+              </div>
+            </div>
+
+            <div className="scheduleRow">
+              <div className="scheduleRowTitle">
+                <p style={{color: '#FDBE3D'}}>Congress </p>
                 <p className="date">August 16</p>
               </div>
               <div className="border1"></div>
@@ -311,7 +324,7 @@ function Home() {
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Congress </p>
+                <p style={{color: '#FDBE3D'}}>Congress </p>
                 <p className="date">August 17</p>
               </div>
               <div className="border1"></div>
@@ -323,7 +336,7 @@ function Home() {
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Congress </p>
+                <p style={{color: '#FDBE3D'}}>Congress </p>
                 <p className="date">August 18</p>
               </div>
               <div className="border1"></div>
@@ -334,41 +347,63 @@ function Home() {
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Congress </p>
+                <p style={{color: '#FDBE3D'}}>Congress </p>
                 <p className="date">August 19</p>
               </div>
               <div className="border1"></div>
               <div className="description">
                 Scientific Day | Dental Olympics | Lecture Contest | Lunch |
-                Closing Party
+                Closing Party (Gala Dinner)
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Post-Congress </p>
-                <p className="date">August 17</p>
+                <p>Departure </p>
+                <p className="date">August 20</p>
               </div>
               <div className="border1"></div>
-              <div className="description">Departures of the congress</div>
+              <div className="description">
+              <span style={{color: '#FDBE3D'}}>Congress attendees: </span>Departures
+                <br></br>
+                <span style={{color: '#8FFF37'}}>Pre-Congress attendees: </span>Departures
+              </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Post-Congress </p>
-                <p className="date">August 18</p>
+                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
+                <p className="date">August 20</p>
               </div>
               <div className="border1"></div>
-              <div className="description">Breakfast | Trip to Kolsay Lake</div>
+              <div className="description">
+                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Breakfast | Trip to Kolsay Lake |
+                Sightseeing <br></br>| Photoshooting | Social Activities | Team building
+                in the mountains | Lunch & Dinner
+              </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p>Post-Congress </p>
-                <p className="date">August 19</p>
+                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
+                <p className="date">August 21</p>
               </div>
               <div className="border1"></div>
-              <div className="description">Departures</div>
+              <div className="description">
+                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Breakfast | Trip back to Novotel,
+                Almaty
+              </div>
+            </div>
+
+            <div className="scheduleRow">
+              <div className="scheduleRowTitle">
+                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
+                <p className="date">August 22</p>
+              </div>
+              <div className="border1"></div>
+              <div className="description">
+                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Departures
+              </div>
             </div>
           </div>
         </div>

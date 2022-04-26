@@ -450,7 +450,6 @@ h2 {
                 font-size: 50px;
                 line-height: 101px;
                 text-align: center;
-
                 color: #FDBE3D;
                 // z-index: 100;
             }
@@ -506,7 +505,7 @@ h2 {
         margin: auto;
 
         .scheduleRowTitle {
-            width: 35%;
+            width: 30%;
             padding-bottom: 22px;
 
             p {
@@ -524,6 +523,7 @@ h2 {
 
             .date {
                 font-weight: 200;
+                margin-bottom: 15px;
             }
 
 

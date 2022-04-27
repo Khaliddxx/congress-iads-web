@@ -15,6 +15,7 @@ import Button from 'react-bootstrap/Button'
 function RegistrationForm() {
   const [loading, setloading] = useState(false);
   const [error, setError] = useState(null);
+  const [refresh, setRefresh] = useState(false);
   const [modalTitle, setModalTitle] = useState(null);
 
  
@@ -92,7 +93,7 @@ function RegistrationForm() {
         data
       )
       .then((response) => {
-        console.log(response);
+        // console.log(response);
       });
 
     
@@ -106,9 +107,9 @@ function RegistrationForm() {
       )
       .then(
         (result) => {
-          console.log(result)
           setloading(false);
           setModalTitle('Congratulations')
+          setRefresh(true);
           setError(
             "Your results has been sent, check your email for payment instructions"
           );
@@ -121,7 +122,7 @@ function RegistrationForm() {
         }
       );
     
-    e.target.reset();
+
   };
 
   const [currentForm, setCurrentForm] = useState("personal");
@@ -220,19 +221,27 @@ function RegistrationForm() {
 
     setCurrentForm(newform);
   };
+
+  const hideModal = () => {
+    setError(null);
+    if(refresh){
+      window.location.href = "/";
+      setRefresh(false)
+    }
+  }
   return (
     <>
       <div className="regFormPage">
 
 
-      <Modal show={error!=null? true: false} onHide={()=>setError(null)}>
+      <Modal show={error!=null? true: false} onHide={hideModal}>
         <Modal.Header closeButton>
           <Modal.Title>{modalTitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{error}</Modal.Body>
         <Modal.Footer>
         <Button
-           onClick={()=>setError(null)}
+           onClick={hideModal}
                 className="btn next"
                 variant="danger"
               >

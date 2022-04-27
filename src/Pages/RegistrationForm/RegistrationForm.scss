@@ -1,0 +1,196 @@
+.regFormPage {
+  background: #e5e5e5;
+  background-image: url(../../Assets/Images/formbg.svg);
+  padding-bottom: 150px;
+
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    /* #333333 - Dark Grey */
+    
+    color: #333333;
+  }
+
+  .regForm {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: -20px;
+
+    .regFormTabs {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+
+      .regFormNum {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+
+        width: 45px;
+        height: 45px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        
+        box-sizing: border-box;
+        border-radius: 50%;
+        z-index: 10;
+      }
+
+      .regFormNumInactive{
+        color: #01838c;
+
+        background: #f9f9f9;
+        border: 2px solid #01838c;
+      }
+
+      .regFormNumActive {
+
+        background: #01838C;
+        color: white;
+
+      }
+
+
+
+
+      .regFormborder {
+        height: 10px;
+        width: 100%;
+       
+        margin: auto;
+        margin-right: -12px;
+        margin-left: -12px;
+      }
+
+      .regFormborderActive {
+        background-color: #01838c;
+
+      }
+
+      .regFormborderInactive {
+        background-color: #b7b7b7;
+
+
+    }
+
+
+      .regFormborder:first-child {
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+
+      .regFormborder:last-child {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    .regformButtons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: flex-end;
+      margin-top: 30px;
+
+      .next {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        // padding: 20px 56px;
+
+        width: 128px;
+        height: 58px;
+
+        background: #01838c;
+        border-radius: 100px;
+
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+      }
+
+      .back {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 56px;
+
+        width: 128px;
+        height: 58px;
+
+        border: 2px solid #01838c;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: #898989;
+      }
+    }
+  }
+
+  .regFormTitles {
+    padding-top: 50px;
+
+    .regFormTitle {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      color: #1c1c1c;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .regFormSub {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 0px;
+      margin-left: 170px;
+      /* identical to box height */
+
+      color: #fdbe3d;
+    }
+  }
+}

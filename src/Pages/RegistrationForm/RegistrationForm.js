@@ -73,14 +73,19 @@ function RegistrationForm() {
       Passport_Expiry: PassportValues.passportExpiryDate,
       Visa_Clearance: PassportValues.visaClearance,
 
+      Passprt_fullName: PassportValues.fullName,
+      Date_Of_Birth: PassportValues.dob,
+
       Vaccine: VaccineValues.vaccineName,
       Doses: VaccineValues.administeredDoses,
+      Plan: VaccineValues.plan,
 
       Package: PackageValues.package,
       Room_Type: PackageValues.roomType,
       Roommate: PackageValues.roommate,
       Allergies: PackageValues.health,
       Dietary: PackageValues.dietary,
+      Package_Consent: PackageValues.consent,
 
       Hear: document.getElementsByName('hear')[0].value
     };

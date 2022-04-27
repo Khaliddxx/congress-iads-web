@@ -27,7 +27,7 @@ function RegistrationForm() {
     let passFile = document.getElementById("validatedCustomFile");
     let vaccFile = document.getElementById("validatedCustomFile2");
 
-    if (passFile.files[0].size + vaccFile.files[0].size > 900000) {
+    if (passFile.files[0].size + vaccFile.files[0].size > 1900000) {
       if (passFile.files[0].size > 900000) {
         setModalTitle('Passport file size');
         setError('Passport file size should not excced 1mb');

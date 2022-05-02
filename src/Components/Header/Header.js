@@ -13,7 +13,7 @@ function Header() {
             <Nav className="me-auto"></Nav>
             <Nav className="headerInner">
               <Nav.Link className="headerLink" href="/#about">ABOUT</Nav.Link>
-              <Nav.Link className="headerLink"  href="/#schedule">
+              <Nav.Link className="headerLink"  href="/program">
                 PROGRAM
               </Nav.Link>
 

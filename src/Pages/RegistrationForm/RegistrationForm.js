@@ -72,7 +72,6 @@ function RegistrationForm() {
       Passport_Issue: PassportValues.passportIssueDate,
       Passport_Expiry: PassportValues.passportExpiryDate,
       Visa_Clearance: PassportValues.visaClearance,
-
       Passprt_fullName: PassportValues.fullName,
       Date_Of_Birth: PassportValues.dob,
 

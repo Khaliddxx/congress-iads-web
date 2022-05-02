@@ -14,6 +14,7 @@ import Footer from "./Components/Footer/Footer";
 import { useLocation } from 'react-router-dom';
 import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
 import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
+import Program from "./Pages/Program/Program";
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
     { path: "/register", element: <Registration /> },
     { path: "/form", element: <RegistrationForm /> },
     { path: "/visa", element: <VisaRequirements /> },
+    { path: "/program", element: <Program /> },
   ]);
   return routes;
 };

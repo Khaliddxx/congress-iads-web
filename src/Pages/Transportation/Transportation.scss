@@ -1,0 +1,205 @@
+.transportationPage {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 40px;
+  .transportationPageTitles {
+    // margin-bottom: 10px;
+    .transportationPageTitle {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 54px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #3f3f3f;
+    }
+
+    .transportationPageSubTitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 70px;
+      color: #01838c;
+      margin-left: 70px;
+      margin-top: -40px;
+      z-index: 100000;
+    }
+  }
+
+  .transpMainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    .transpMainSectionCard {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+
+      .transportationPageTitles {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin: auto;
+
+        .transportationPageTitle {
+          font-size: 40px;
+        }
+      }
+
+      .transpMainSectionCardBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+
+        .transLearnMoreCTA{
+          margin-right: auto;
+          text-decoration: none;
+          font-weight: 700;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+
+color: #FFFFFF;
+background: #01838C;
+border-radius: 100px;
+padding: 11px 28px;
+text-transform: uppercase;
+        }
+
+        .transpMainSectionCardBody1 {
+          font-size: 25px;
+          line-height: 40px;
+          color: #585858;
+        }
+
+        .transpMainSectionCardBody2 {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 40px;
+          color: #585858;
+          margin-right: auto;
+        }
+      }
+
+      .border1 {
+        width: 8px;
+        min-height: 100%;
+        margin-right: 30px;
+        // margin: auto;
+
+        background: #01838c;
+        border-radius: 20px;
+      }
+
+      .transDiscountDiv{
+        display: flex;
+        gap: 10px;
+      }
+
+      .transDiscount {
+        margin-left: 10px;
+        border: 2px solid #c70a0c;
+        box-sizing: border-box;
+        border-radius: 100px;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #dc1723;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .transportationPage {
+  }
+}
+@media only screen and (max-width: 992px) {
+  .transportationPage {
+    .transpMainSection {
+      .transpMainSectionCard {
+        flex-direction: column;
+
+        .transLearnMoreCTA{
+          margin: auto;
+          margin-bottom: 20px;
+
+        }
+        .transDiscountDiv{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          img{
+            max-width: 40%;
+            margin: auto;
+
+          }
+        }
+        .transportationPageTitles {
+          width: 100%;
+          .transportationPageTitle {
+          }
+        }
+
+        .transpMainSectionCardBody {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          .transpMainSectionCardBody1 {
+            font-size: 25px;
+            line-height: 40px;
+
+            /* or 160% */
+
+            /* Body text */
+
+            color: #585858;
+          }
+        }
+
+        .border1 {
+          width: 80%;
+          height: 8px;
+          // min-height: 100%;
+          margin: auto;
+
+          background: #01838c;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .transportationPage {
+    .transportationPageTitles {
+      .transportationPageTitle {
+        font-size: 30px;
+        line-height: 54px;
+      }
+
+      .transportationPageSubTitle {
+        font-size: 35px;
+        line-height: 70px;
+      }
+    }
+  }
+}

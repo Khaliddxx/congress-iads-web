@@ -15,6 +15,7 @@ import { useLocation } from 'react-router-dom';
 import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
 import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
 import Program from "./Pages/Program/Program";
+import Transportation from "./Pages/Transportation/Transportation";
 
 
 const AppRoutes = () => {
@@ -24,6 +25,7 @@ const AppRoutes = () => {
     { path: "/form", element: <RegistrationForm /> },
     { path: "/visa", element: <VisaRequirements /> },
     { path: "/program", element: <Program /> },
+    { path: "/Transportation", element: <Transportation /> },
   ]);
   return routes;
 };

@@ -69,6 +69,7 @@ function RegistrationForm() {
       Invitation: AffiliationValues.invitation,
 
       Passport_No: PassportValues.passportNumber,
+      nationality: PassportValues.nationality,
       Passport_Issue: PassportValues.passportIssueDate,
       Passport_Expiry: PassportValues.passportExpiryDate,
       Visa_Clearance: PassportValues.visaClearance,
@@ -165,7 +166,7 @@ function RegistrationForm() {
     pob: "",
     passportNumber: "",
     passportIssueDate: "",
-
+    nationality: "",
     passportExpiryDate: "",
     IADSmemberAssociation: "",
     visaClearance: "",
@@ -999,7 +1000,7 @@ function RegistrationForm() {
             </div>
 
             <div className="row">
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-6">
                 <label>Passport issue date</label>
                 <input
                   type="date"
@@ -1019,7 +1020,7 @@ function RegistrationForm() {
                 </div>
               </div>
 
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-6">
                 <label>Passport Expiry date</label>
                 <input
                   type="date"
@@ -1038,8 +1039,39 @@ function RegistrationForm() {
                   Passport Expiry date is required.
                 </div>
               </div>
+              </div>
+              <div className="row">
+              <div className="form-group col-md-6">
+                <label for="inputName">Nationality</label>
 
-              <div className="form-group col-md-4">
+                <select
+                  id="nationality"
+                  className="form-control"
+                  name="nationality"
+                  onChange={(e) =>
+                    setPassportValues({
+                      ...PassportValues,
+                      nationality: e.target.value,
+                    })
+                  }
+                  required
+                >
+                  <option value={""} disabled selected>
+                    Choose...
+                  </option>
+                  {countries.map((item, i) => {
+                    return (
+                      <option value={item.name} key={i}>
+                        {item.name}
+                      </option>
+                    );
+                  })}
+                </select>
+
+                <div className="invalid-feedback">Gender is required.</div>
+              </div>
+
+              <div className="form-group col-md-6">
                 <label for="inputName">
                   Do you need a letter for{" "}
                   <a target="_blank" href="/visa">

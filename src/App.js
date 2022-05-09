@@ -16,6 +16,7 @@ import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
 import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
 import Program from "./Pages/Program/Program";
 import Transportation from "./Pages/Transportation/Transportation";
+import About from "./Pages/About/About";
 
 
 const AppRoutes = () => {
@@ -25,7 +26,8 @@ const AppRoutes = () => {
     { path: "/form", element: <RegistrationForm /> },
     { path: "/visa", element: <VisaRequirements /> },
     { path: "/program", element: <Program /> },
-    { path: "/Transportation", element: <Transportation /> },
+    { path: "/transportation", element: <Transportation /> },
+    // { path: "/about", element: <About /> },
   ]);
   return routes;
 };

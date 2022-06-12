@@ -17,6 +17,7 @@ import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
 import Program from "./Pages/Program/Program";
 import Transportation from "./Pages/Transportation/Transportation";
 import About from "./Pages/About/About";
+import Dental from "./Pages/Landing/Dental/Dental";
 
 
 const AppRoutes = () => {
@@ -27,7 +28,8 @@ const AppRoutes = () => {
     { path: "/visa", element: <VisaRequirements /> },
     { path: "/program", element: <Program /> },
     { path: "/transportation", element: <Transportation /> },
-    // { path: "/about", element: <About /> },
+    { path: "/about", element: <About /> },
+    { path: "/landing/dental", element: <Dental /> },
   ]);
   return routes;
 };
@@ -39,7 +41,6 @@ const App = () => {
 
       <div>
         <AppRoutes />
-
       </div>
 
       <Sponsers   />

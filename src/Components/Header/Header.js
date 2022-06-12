@@ -12,7 +12,7 @@ function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav className="headerInner">
-              <Nav.Link className="headerLink" href="/#about">ABOUT</Nav.Link>
+              <Nav.Link className="headerLink" href="/about">ABOUT</Nav.Link>
               <Nav.Link className="headerLink"  href="/program">
                 PROGRAM
               </Nav.Link>

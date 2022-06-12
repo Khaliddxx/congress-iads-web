@@ -1,4 +1,24 @@
-.aboutPage {
+.dentalPage {
+  .dentalCTA {
+    background: #01838c;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+
+    padding: 17px 50px;
+  }
+
+  .dentalCTAButtom {
+    margin: auto;
+    margin-top: 20px;
+  }
   .aboutPageMain {
     display: flex;
     flex-direction: row-reverse;
@@ -90,78 +110,40 @@
       object-fit: cover;
     }
   }
-  .aboutPageSecond {
+  .dentalPageSecond {
     margin: auto;
     text-align: justify;
     width: 70%;
-    .aboutPageSecondTitle {
-      .aboutPageSecondTitle1 {
+    .dentalPageSecondTitle {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .dentalPageSecondTitle1 {
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
         width: fit-content;
+        line-height: 0px;
       }
-      .aboutPageSecondTitle2 {
+      .dentalPageSecondTitle2 {
         font-style: normal;
         font-weight: 400;
         font-size: 50px;
         width: fit-content;
         color: #fdbe3d;
-        margin-top: -55px;
+
+        // margin-top: -55px;
         margin-left: 40px;
       }
     }
 
-    .aboutPageSecondBody {
-      margin-top: 33px;
+    .dentalPageSecondBody {
+      margin-top: 53px;
       text-align: center;
-    }
-  }
-
-  .aboutPageVideos {
-    padding: 0;
-    margin-top: 100px;
-
-    .aboutPageVideosTitle {
-      .aboutPageVideosTitle1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-      }
-
-      .aboutPageVideosTitle2 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 40px;
-        text-align: center;
-        color: #01838c;
-      }
-    }
-
-    .aboutPageVideosMain{
-      margin-top: 45px;
-      margin-bottom: 150px;
-      display: flex;
-      flex-wrap: wrap;
-      background: #EFEFEF;
-      justify-content: center;
-      gap: 56px;
-      padding-top: 48px;
-      padding-bottom: 48px;
-      // height: 255px;
-
-      img{
-        border-radius: 12px;
-        width: 254px;
-        height: 160px;
-      }
     }
   }
 }
@@ -179,8 +161,17 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutPage {
+  .dentalPage {
+    .dentalPageSecond {
+    
+      .dentalPageSecondTitle {
+       flex-direction: column;
+       gap: 30px;
+
+      }
+    }
     .aboutPageMain {
+      
       .mySwiper2 {
         height: 250px;
       }
@@ -190,7 +181,7 @@
       }
     }
 
-    .aboutPageSecond {
+    .dentalPageSecond {
       width: 100%;
     }
   }

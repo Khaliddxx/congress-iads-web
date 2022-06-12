@@ -13,13 +13,18 @@ function Packages(props) {
           <h1 className="hongKong">Congress</h1>
           <p className="subtitlePack">Packages</p>
 
-          <a  href="/form" className="packagesSecCTA">Early bird registrations </a>
-          <div className="avTickets"><img src={ticketImage} />available tickets: 80</div>
+          <a href="/form" className="packagesSecCTA">
+            Early bird registrations{" "}
+          </a>
+          <div className="avTickets">
+            <img src={ticketImage} />
+            available tickets: 80
+          </div>
         </div>
         <ul className="pricingCards">
           <li>
             <PricingCard
-              price="380"
+              price="470"
               title={"Congress"}
               child1={
                 <dv className="packageTitle">
@@ -49,7 +54,7 @@ function Packages(props) {
 
           <li>
             <PricingCard
-              price="450"
+              price="560"
               color={"var(--primary-color)"}
               child1={
                 <dv className="packageTitle">
@@ -83,7 +88,7 @@ function Packages(props) {
 
           <li>
             <PricingCard
-              price="520"
+              price="630"
               color={"var(--secondary-color)"}
               priceColor="white"
               child1={
@@ -132,7 +137,7 @@ function Packages(props) {
           </li>
 
           <li>
-            <PremiumPricingCard price="590" title={"Locals only"}>
+            <PremiumPricingCard price="720" title={"Locals only"}>
               <p>
                 Meals and Snacks from Aug 14th (dinner) to Aug 21st (breakfast)
               </p>

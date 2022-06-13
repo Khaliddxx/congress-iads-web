@@ -6,6 +6,10 @@
   padding-bottom: 40px;
   gap: 60px;
 
+  a{
+    text-decoration: none;
+  }
+
   // justify-content: center;
   .programPageTitles {
     width: fit-content;
@@ -19,9 +23,6 @@
       border-radius: 100px;
     }
 
-    //   border-bottom: 11px solid #01838C;
-
-    //   border-bottom-right-radius: 5px;
 
     .title {
       font-size: 50px;

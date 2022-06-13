@@ -18,6 +18,9 @@ import Program from "./Pages/Program/Program";
 import Transportation from "./Pages/Transportation/Transportation";
 import About from "./Pages/About/About";
 import Dental from "./Pages/Landing/Dental/Dental";
+import Lecture from "./Pages/Landing/Lecture/Lecture";
+import Exchange from "./Pages/Landing/Exchange/Exchange";
+import GeneralA from "./Pages/Landing/GeneralA/GeneralA";
 
 
 const AppRoutes = () => {
@@ -30,6 +33,9 @@ const AppRoutes = () => {
     { path: "/transportation", element: <Transportation /> },
     { path: "/about", element: <About /> },
     { path: "/landing/dental", element: <Dental /> },
+    { path: "/landing/lecture", element: <Lecture /> },
+    { path: "/landing/exchange", element: <Exchange /> },
+    { path: "/landing/general", element: <GeneralA /> },
   ]);
   return routes;
 };

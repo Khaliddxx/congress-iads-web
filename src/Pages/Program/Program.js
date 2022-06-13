@@ -34,12 +34,12 @@ function Program() {
             <div className="qaCTA">
               Scientific<br></br>day
             </div>
-            <div className="qaCTA">
+            <a href="/landing/general" className="qaCTA">
               General<br></br>assembly
-            </div>
-            <div className="qaCTA">
+            </a>
+            <a href="/landing/exchange" className="qaCTA">
               Exhcnage<br></br>fair
-            </div>
+            </a>
             <div className="qaCTA">
               Opening ceremony<br></br>& gala dinner
             </div>

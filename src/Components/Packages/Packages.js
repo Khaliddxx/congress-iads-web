@@ -14,7 +14,7 @@ function Packages(props) {
           <p className="subtitlePack">Packages</p>
 
           <a href="/form" className="packagesSecCTA">
-            Early bird registrations{" "}
+            Late bird registrations{" "}
           </a>
           <div className="avTickets">
             <img src={ticketImage} />

@@ -1,0 +1,113 @@
+.CongressLectures {
+  .CongressLecturestitles {
+    .CongressLecturestitles1 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 60px;
+      text-align: center;
+      color: #01838c;
+    }
+
+    .CongressLecturestitles2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 10px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #3f3f3f;
+    }
+
+    .CongressLecturestitles3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #3f3f3f;
+    }
+
+    .CongressLecturestitlesCTA {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      color: #2d2d2d;
+      background: #fdbe3d;
+      border-radius: 100px;
+      width: fit-content;
+      padding: 8px 40px;
+      text-decoration: none;
+      cursor: pointer;
+      margin: auto;
+    }
+  }
+
+  .CongressLecturesBody {
+    .CongressLecturesBodySec {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 50px;
+
+      .CongressLecturesBodySecMain {
+
+
+        .CongressLecturesBodySecMain1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #007982;
+        }
+
+        .CongressLecturesBodySecMain2,
+        .CongressLecturesBodySecMain4 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: justify;
+
+          color: #3f3f3f;
+        }
+
+        .CongressLecturesBodySecMain3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          /* identical to box height */
+
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .CongressLectures {
+    .CongressLecturesBody {
+      .CongressLecturesBodySec {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

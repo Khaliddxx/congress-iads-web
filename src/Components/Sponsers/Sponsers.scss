@@ -71,16 +71,17 @@
 
     .sponsers {
         width: 100%;
-    
+        padding: 0;
     
         .sponsersBody {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            width: 100%;
+
         }
 
         .sponsersBody *{
-            
             padding: 25px 0;
         }
 

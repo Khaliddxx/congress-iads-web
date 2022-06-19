@@ -21,6 +21,9 @@ import Dental from "./Pages/Landing/Dental/Dental";
 import Lecture from "./Pages/Landing/Lecture/Lecture";
 import Exchange from "./Pages/Landing/Exchange/Exchange";
 import GeneralA from "./Pages/Landing/GeneralA/GeneralA";
+import ScientificDay from "./Pages/Landing/ScientificDay/ScientificDay";
+import CongressLectures from "./Pages/Landing/CongressLectures/CongressLectures";
+import RefundPolicy from "./Pages/RefundPolicy/RefundPolicy";
 
 
 const AppRoutes = () => {
@@ -36,6 +39,9 @@ const AppRoutes = () => {
     { path: "/landing/lecture", element: <Lecture /> },
     { path: "/landing/exchange", element: <Exchange /> },
     { path: "/landing/general", element: <GeneralA /> },
+    { path: "/scientific", element: <ScientificDay /> },
+    { path: "/congresslectures", element: <CongressLectures /> },
+    { path: "/refund", element: <RefundPolicy /> },
   ]);
   return routes;
 };

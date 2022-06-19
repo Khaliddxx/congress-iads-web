@@ -1,0 +1,160 @@
+.ScientificDay {
+  min-height: 100vh;
+  .quickAccess {
+    a {
+      text-decoration: none;
+    }
+    min-height: 146px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    // flex-direction: row;
+    width: 100%;
+    background: #e8e8e8;
+    border-radius: 20px;
+
+    .quickAccessTitles {
+      .title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 40px;
+        text-align: left;
+        margin-left: -40px;
+
+        color: #fdbe3d;
+      }
+
+      .subtitle {
+        font-size: 40px;
+        line-height: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #3f3f3f;
+      }
+
+      .subsubtitle {
+        font-size: 20px;
+        line-height: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #3f3f3f;
+      }
+    }
+
+    .qaCTAs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .qaCTA {
+        background: #fdbe3d;
+        border-radius: 100px;
+        height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: #2d2d2d;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 992px) {
+  .ScientificDay {
+    .quickAccess {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 100%;
+      background: #e8e8e8;
+      border-radius: 20px;
+      gap: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .quickAccessTitles {
+        .title {
+          font-weight: 400;
+          font-size: 50px;
+          line-height: 40px;
+          text-align: left;
+          margin-left: -40px;
+
+          color: #fdbe3d;
+        }
+
+        .subtitle {
+          font-size: 40px;
+          line-height: 10px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #3f3f3f;
+        }
+
+        .subsubtitle {
+          font-size: 20px;
+          line-height: 10px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #3f3f3f;
+        }
+      }
+
+      .qaCTAs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+
+        .qaCTA {
+          background: #fdbe3d;
+          border-radius: 100px;
+          height: 50px;
+          padding-left: 30px;
+          padding-right: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ScientificDay {
+  }
+}

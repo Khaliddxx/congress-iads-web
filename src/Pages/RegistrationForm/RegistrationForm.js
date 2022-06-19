@@ -230,7 +230,7 @@ function RegistrationForm() {
   const hideModal = () => {
     setError(null);
     if(refresh){
-      window.location.href = "/";
+      window.location.href = "/refund";
       setRefresh(false)
     }
   }

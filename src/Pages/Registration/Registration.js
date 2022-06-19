@@ -34,6 +34,8 @@ function Registration() {
               subTitle="Registration"
               body="Learn new skills with the wide variety of hands-on workshops and dive into the much needed soft skills training sessions"
               cta1="LEARN NOW"
+              cta1href="/congresslectures"
+              
               cta2="REGISTER NOW"
             />
           </div>
@@ -44,6 +46,7 @@ function Registration() {
             subTitle="Registration"
             body="Participate in lecture contest and showcase your skills in the Dental Olympics"
             cta1="LEARN NOW"
+            cta1href="/scientific"
             cta2="REGISTER NOW"
           />
 
@@ -52,6 +55,9 @@ function Registration() {
             subTitle="Submission "
             body="Enjoy an exciting night filled with a variety of fun events, get to know differnt cultures and showcase your talents!"
             cta1="LEARN MORE"
+            cta1href="/landing/exchange"
+
+            
             cta2="SUBMIT"
           />
         </div>
@@ -68,7 +74,7 @@ function Registration() {
           <div className="refundbody">
             Read about our terms and conditions regarding refund policy
           </div>
-          <a className="refCta">Learn More</a>
+          <a className="refCta" href="https://drive.google.com/file/d/1r47Ov9aukpNQ79dVTaqJ2NG75ZsBAv13/view" target={"_blank"}>Learn More</a>
         </div>
 
         <div id="packages">

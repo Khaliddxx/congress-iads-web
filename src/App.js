@@ -11,7 +11,7 @@ import Registration from "./Pages/Registration/Registration";
 import Sponsers from "./Components/Sponsers/Sponsers";
 import Footer from "./Components/Footer/Footer";
 
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import RegistrationForm from "./Pages/RegistrationForm/RegistrationForm";
 import VisaRequirements from "./Pages/VisaRequirements/VisaRequirements";
 import Program from "./Pages/Program/Program";
@@ -24,7 +24,6 @@ import GeneralA from "./Pages/Landing/GeneralA/GeneralA";
 import ScientificDay from "./Pages/Landing/ScientificDay/ScientificDay";
 import CongressLectures from "./Pages/Landing/CongressLectures/CongressLectures";
 import RefundPolicy from "./Pages/RefundPolicy/RefundPolicy";
-
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -55,7 +54,7 @@ const App = () => {
         <AppRoutes />
       </div>
 
-      <Sponsers   />
+      <Sponsers />
       <Footer id="footer" />
     </Router>
   );

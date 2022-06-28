@@ -9,16 +9,14 @@ import countries from "../../Shared/Data/countries.json";
 import Select from "react-select";
 import emailjs from "emailjs-com";
 import axios from "axios";
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button'
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 function RegistrationForm() {
   const [loading, setloading] = useState(false);
   const [error, setError] = useState(null);
   const [refresh, setRefresh] = useState(false);
   const [modalTitle, setModalTitle] = useState(null);
-
- 
 
   const sendEmail = (e) => {
     e.stopPropagation();
@@ -29,17 +27,16 @@ function RegistrationForm() {
 
     if (passFile.files[0].size + vaccFile.files[0].size > 1900000) {
       if (passFile.files[0].size > 900000) {
-        setModalTitle('Passport file size');
-        setError('Passport file size should not excced 1mb');
+        setModalTitle("Passport file size");
+        setError("Passport file size should not excced 1mb");
         passFile.scrollIntoView();
-
 
         return;
       }
 
       if (vaccFile.files[0].size > 900000) {
-        setModalTitle('Vaccination proof file size');
-        setError('Vaccination proof file size should not excced 1mb');
+        setModalTitle("Vaccination proof file size");
+        setError("Vaccination proof file size should not excced 1mb");
         vaccFile.scrollIntoView();
 
         return;
@@ -47,7 +44,6 @@ function RegistrationForm() {
     }
 
     let data = {
-
       Name: personalContactValues.fullName,
       Gender: personalContactValues.gender,
       Country: personalContactValues.conutry,
@@ -87,7 +83,7 @@ function RegistrationForm() {
       Dietary: PackageValues.dietary,
       Package_Consent: PackageValues.consent,
 
-      Hear: document.getElementsByName('hear')[0].value
+      Hear: document.getElementsByName("hear")[0].value,
     };
 
     setloading(true);
@@ -101,8 +97,6 @@ function RegistrationForm() {
         // console.log(response);
       });
 
-    
-
     emailjs
       .sendForm(
         "service_zhe1pvp",
@@ -113,7 +107,7 @@ function RegistrationForm() {
       .then(
         (result) => {
           setloading(false);
-          setModalTitle('Congratulations')
+          setModalTitle("Congratulations");
           setRefresh(true);
           setError(
             "Your results has been sent, check your email for payment instructions"
@@ -121,13 +115,11 @@ function RegistrationForm() {
         },
         (error) => {
           setloading(false);
-          setModalTitle('Error')
+          setModalTitle("Error");
           setError(error.text);
-          return
+          return;
         }
       );
-    
-
   };
 
   const [currentForm, setCurrentForm] = useState("personal");
@@ -229,33 +221,25 @@ function RegistrationForm() {
 
   const hideModal = () => {
     setError(null);
-    if(refresh){
+    if (refresh) {
       window.location.href = "/refund";
-      setRefresh(false)
+      setRefresh(false);
     }
-  }
+  };
   return (
     <>
       <div className="regFormPage">
-
-
-      <Modal show={error!=null? true: false} onHide={hideModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>{modalTitle}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{error}</Modal.Body>
-        <Modal.Footer>
-        <Button
-           onClick={hideModal}
-                className="btn next"
-                variant="danger"
-              >
-                OK
-              </Button>
-        
-        
-        </Modal.Footer>
-      </Modal>
+        <Modal show={error != null ? true : false} onHide={hideModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>{modalTitle}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{error}</Modal.Body>
+          <Modal.Footer>
+            <Button onClick={hideModal} className="btn next" variant="danger">
+              OK
+            </Button>
+          </Modal.Footer>
+        </Modal>
 
         <div className="regFormTitles container">
           <p className="regFormTitle">
@@ -628,7 +612,6 @@ function RegistrationForm() {
             <h2>Affiliation</h2>
             <div className="row">
               <div className="form-group col-md-6">
-                
                 <label for="inputName">
                   How did you hear about this event?
                 </label>
@@ -1039,8 +1022,8 @@ function RegistrationForm() {
                   Passport Expiry date is required.
                 </div>
               </div>
-              </div>
-              <div className="row">
+            </div>
+            <div className="row">
               <div className="form-group col-md-6">
                 <label for="inputName">Nationality</label>
 
@@ -1506,13 +1489,19 @@ function RegistrationForm() {
                     required
                   />
                   <label class="form-check-label" for="invalidCheck5">
-                    I understand and agree to the{" "}
+                    I understand and agree to the
                     <a
                       target="_blank"
                       href="https://drive.google.com/file/d/1B6vceeZVs3YqrsBkvsyew84F1K-cGKLR/view?usp=sharing"
                     >
-                      {" "}
-                      Terms and Conditions and IADS Refund Policy{" "}
+                      Terms and Conditions
+                    </a>
+                    {" and "}
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/file/d/1r47Ov9aukpNQ79dVTaqJ2NG75ZsBAv13/view"
+                    >
+                      IADS Refund Policy
                     </a>
                     .
                   </label>

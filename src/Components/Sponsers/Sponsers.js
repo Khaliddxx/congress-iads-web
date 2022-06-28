@@ -7,6 +7,8 @@ import HFC from "../../Assets/Images/Sponsers/HFG_Group_Logo_ 1.svg";
 import HFC2 from "../../Assets/Images/Sponsers/HFG_Group_Logo_ 2.svg";
 import colgate from "../../Assets/Images/Sponsers/Colgate.svg";
 import gold from "../../Assets/Images/Sponsers/gold.svg";
+import silver from "../../Assets/Images/Sponsers/silver.svg";
+import Zeiss from "../../Assets/Images/Sponsers/Zeiss.svg";
 import gold1 from "../../Assets/Images/Sponsers/gold1.svg";
 import bronze from "../../Assets/Images/Sponsers/bronze.svg";
 import bronze1 from "../../Assets/Images/Sponsers/bronze1.svg";
@@ -38,6 +40,8 @@ function Sponsers(props) {
           <img src={Uni}></img>
           <img src={currentPath == "/" ? gold : gold1}></img>
           <img src={KSA}></img>
+          <img src={silver}></img>
+          <img src={Zeiss}></img>
           <img src={currentPath == "/" ? bronze : bronze1}></img>
           <img src={jaden}></img>
         </div>

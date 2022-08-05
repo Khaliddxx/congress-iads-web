@@ -34,7 +34,11 @@ function Footer(props) {
             </div>
           </a>
 
-          <a href="https://twitter.com/iadsweborg" target="_blank" className="socialMediaLink">
+          <a
+            href="https://twitter.com/iadsweborg"
+            target="_blank"
+            className="socialMediaLink"
+          >
             <div className="icon">
               <FontAwesomeIcon color="white" size="2x" icon={faTwitter} />
             </div>
@@ -68,6 +72,7 @@ function Footer(props) {
         </div>
 
         <p>IADS annual congress kazakhstan 2022®</p>
+        <p>Developed by xDev</p>
       </div>
     </>
   );

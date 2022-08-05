@@ -1,0 +1,124 @@
+.sponsors-page {
+  @media screen and (max-width: 900px) {
+    .sponsors-page {
+      width: 100vw;
+    }
+
+    .logo {
+      width: 100% !important;
+    }
+
+    .temp {
+      margin-top: 40px;
+    }
+  }
+  //   width: fit-content;
+  // max-width: 350px;
+
+  .logo {
+  }
+  .header {
+    margin-top: 40px;
+  }
+
+  .border1 {
+    max-width: 350px;
+    margin: auto;
+    height: 11px;
+    background-color: #01838c;
+    border-radius: 100px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 15px;
+    text-align: center;
+    color: #fdbe3d;
+  }
+  .subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    color: #3f3f3f;
+  }
+  .subsubtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #3f3f3f;
+  }
+
+  .gold {
+    background-color: #e1b65c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // width: 100vw;
+  }
+  .silver {
+    background-color: #bab6af;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // width: 100vw;
+  }
+  .bronze {
+    background-color: #ba4d1f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // width: 100vw;
+  }
+  .general {
+    background-color: #01838c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // width: 100vw;
+  }
+
+  .btn {
+    padding: 20px 25px;
+    gap: 10px;
+
+    width: 263px;
+    height: 58px;
+
+    background: #01838c;
+    border-radius: 100px;
+
+    // font-family: "Harmonia Sans Pro Cyr";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    // margin-top: 90px;
+  }
+
+  .content {
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+
+  .flexx {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+
+    align-items: center;
+    justify-content: center;
+  }
+}

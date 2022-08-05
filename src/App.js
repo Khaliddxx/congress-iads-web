@@ -24,6 +24,7 @@ import GeneralA from "./Pages/Landing/GeneralA/GeneralA";
 import ScientificDay from "./Pages/Landing/ScientificDay/ScientificDay";
 import CongressLectures from "./Pages/Landing/CongressLectures/CongressLectures";
 import RefundPolicy from "./Pages/RefundPolicy/RefundPolicy";
+import SponsorsPage from "./Pages/Sponsors/SponsorsPage";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -34,6 +35,7 @@ const AppRoutes = () => {
     { path: "/program", element: <Program /> },
     { path: "/transportation", element: <Transportation /> },
     { path: "/about", element: <About /> },
+    { path: "/sponsors", element: <SponsorsPage /> },
     { path: "/landing/dental", element: <Dental /> },
     { path: "/landing/lecture", element: <Lecture /> },
     { path: "/landing/exchange", element: <Exchange /> },

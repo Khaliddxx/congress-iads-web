@@ -17,10 +17,10 @@ function ScientificDay() {
             <a href="/congresslectures" className="qaCTA">
             Lecture <br></br>& Workshops
             </a>
-            <a href="/landing/general" className="qaCTA">
+            <a href="/landing/dental" className="qaCTA">
               Dental<br></br>Olympics
             </a>
-            <a href="/landing/exchange" className="qaCTA">
+            <a href="/landing/lecture" className="qaCTA">
               Lecture<br></br>Contest
             </a>
             <div className="qaCTA">

@@ -146,13 +146,108 @@
       text-align: center;
     }
   }
+
+  .table1 {
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+    .thead {
+      justify-content: space-between;
+
+      th {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background: #fdbe3d;
+      }
+      th:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+
+      th:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid #d8d8d8;
+        td {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .bulletPoints {
+    margin-top: 52px;
+    li {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+      color: #585858;
+    }
+  }
+
+  .rulesRound{
+    margin-top: 50px;
+
+    .rulesRoundBodyInd{
+      display: flex;
+      gap: 64px;
+      margin-bottom: 45px;
+    }
+
+    ul{
+      list-style-type: circle;
+    }
+  }
+
+  .pagetitles {
+    .pagetitle1 {
+      font-weight: 400;
+      font-size: 50px;
+      margin-bottom: -12px;
+    }
+
+    .pagetitle2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height */
+
+      // letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      color: #3f3f3f;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
 }
 
-@media only screen and (max-width: 1024px) {
-  .aboutPage {
+@media only screen and (max-width: 1200px) {
+  .dentalPage {
+    .rulesRound{
+  
+      .rulesRoundBodyInd{
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 45px;
+      }
+  
+    
+    }
   }
 }
 @media only screen and (max-width: 992px) {
@@ -163,15 +258,12 @@
 @media only screen and (max-width: 768px) {
   .dentalPage {
     .dentalPageSecond {
-    
       .dentalPageSecondTitle {
-       flex-direction: column;
-       gap: 30px;
-
+        flex-direction: column;
+        gap: 30px;
       }
     }
     .aboutPageMain {
-      
       .mySwiper2 {
         height: 250px;
       }

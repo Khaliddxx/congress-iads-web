@@ -1,0 +1,111 @@
+.electoralPage {
+  .electoralTitles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin-bottom: 70px;
+    .electoralTitle1 {
+      font-weight: 400;
+      font-size: 50px;
+      // line-height: 101px;
+      text-align: center;
+      color: #fdbe3d;
+      margin-bottom: -20px;
+    }
+
+    .electoralTitle2 {
+      font-weight: 700;
+      font-size: 40px;
+      // line-height: 101px;
+      text-align: center;
+      color: #3f3f3f;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .electoralTitle3 {
+      font-weight: 4 00;
+      font-size: 17px;
+      // line-height: 101px;
+      text-align: center;
+      color: #3f3f3f;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-top: -20px;
+    }
+
+    .electoralBorder {
+      background: #01838c;
+      border-radius: 100px;
+      width: 100%;
+      max-width: 350px;
+      height: 11px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .electoralComp {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .electoralProfiles {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .electoralComp:nth-child(even) {
+    background: #E8E8E8;
+  }
+}
+
+.electoralProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 305px;
+  min-height: 450px;
+
+  .elecName {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-style: normal;
+    width: 70%;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #3f3f3f;
+  }
+
+  .elecCTAs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .elecCTA {
+    background: #01838c;
+    border-radius: 100px;
+    width: 100%;
+    margin-bottom: 16px;
+    text-decoration: none;
+    padding-block: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

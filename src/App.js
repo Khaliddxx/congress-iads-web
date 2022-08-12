@@ -27,6 +27,7 @@ import ScientificDay from "./Pages/Landing/ScientificDay/ScientificDay";
 import CongressLectures from "./Pages/Landing/CongressLectures/CongressLectures";
 import RefundPolicy from "./Pages/RefundPolicy/RefundPolicy";
 import SponsorsPage from "./Pages/Sponsors/SponsorsPage";
+import Electoral from "./Pages/Electoral/Electoral";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -47,6 +48,7 @@ const AppRoutes = () => {
     { path: "/scientific", element: <ScientificDay /> },
     { path: "/congresslectures", element: <CongressLectures /> },
     { path: "/refund", element: <RefundPolicy /> },
+    { path: "/electoral", element: <Electoral /> },
   ]);
   return routes;
 };

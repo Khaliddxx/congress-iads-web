@@ -15,9 +15,18 @@
     padding: 17px 50px;
   }
 
+.dentalCTAButtoms{
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  gap: 51px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
   .dentalCTAButtom {
-    margin: auto;
-    margin-top: 20px;
+    // margin: auto;
     background-color: #FDBE3D;
     color: #000;
   }

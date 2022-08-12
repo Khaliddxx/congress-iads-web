@@ -147,17 +147,17 @@ function Electoral() {
           </div>
           <div className="electoralProfiles container">
             <ElectoralProfile name="Kristine Romanovska"
-              img={vp4}
+              img={vp5}
               href1="https://drive.google.com/file/d/1X24guruMKTUSL9Z2RdjIU_RrukOQhnfu/view?usp=sharing"
               href2="https://drive.google.com/file/d/1gUKk9maI_0iqoFaQJutREHUAJKdXegws/view?usp=sharing" />
 
             <ElectoralProfile name="Jean Felix Gasasira"
-              img={vp5}
+              img={vp6}
               href1="https://drive.google.com/file/d/1xDgM_EBclLhw4eJCp5KVKpJvfpepvxoe/view?usp=sharing"
               href2="https://drive.google.com/file/d/1F5P9i_DWu2db269KPIlNo8hzawk89NMz/view?usp=sharing" />
 
             <ElectoralProfile name="Ranya Oualid"
-              img={vp6}
+              img={vp7}
               href1="https://drive.google.com/file/d/1z43a0p8saibw3p7-2DusbA5mOawYbqDa/view?usp=sharing"
               href2="https://drive.google.com/file/d/1zzRnPmU_Q9VIjhm__sVPULy-lAqL_UPf/view?usp=sharing" />
           </div>
@@ -173,12 +173,12 @@ function Electoral() {
           </div>
           <div className="electoralProfiles container">
             <ElectoralProfile name="Aneeq Majed Mian"
-              img={vp7}
+              img={vp8}
               href1="https://drive.google.com/file/d/1hgSwS97VJU9qzEElrP5jwqMSxfeHKz1d/view?usp=sharing"
               href2="https://drive.google.com/file/d/1nZP1Fr2TiC-pt4ytKzBVmtk-oXXMY96i/view?usp=sharing" />
 
             <ElectoralProfile name="Raghda Nouman Fanoun"
-              img={vp8}
+              img={vp9}
               href1="https://drive.google.com/file/d/1CRjpr51Ng2Ptg6XcFEkzZiplJwYmJkos/view?usp=sharing"
               href2="https://drive.google.com/file/d/1lyPUg4zb1QK5tDM-rTBg-umRq_KQe0dV/view?usp=sharing" />
           </div>
@@ -227,7 +227,7 @@ function Electoral() {
           </div>
           <div className="electoralProfiles container">
             <ElectoralProfile name="Ranya Oualid"
-              img={vp6}
+              img={vp7}
               href1="https://drive.google.com/file/d/1r9oYKkz7ot0SVaW5twvkmnOUaNhsh_v9/view?usp=sharing"
               href2="https://drive.google.com/file/d/1iZatwfPYFinUVsOvuaJzWN8Xmohky5E2/view?usp=sharing" />
           </div>
@@ -271,7 +271,7 @@ function Electoral() {
           <div className="electoralProfiles container">
             <ElectoralProfile name="Ng Yook Shiang"
               img={ra4}
-              href1="https://drive.google.com/file/d/1Un_o6i2i6dR9MEMRCQzRH0IY4NLn1Njv/view?usp=sharing"
+              href1="https://drive.google.com/file/d/1brH7SVLQArP41BFjE8RkxBPxpKlWDq6o/view?usp=sharing"
               href2="https://drive.google.com/file/d/1ID29_Ei_tmIV7Y3k0VmNOiFaC1pHjpsQ/view?usp=sharing" />
 
             <ElectoralProfile name="Viandra Tjokroadiredjo"
@@ -410,30 +410,30 @@ function Electoral() {
           <div className="electoralProfiles container">
             <ElectoralProfile name="Abanoub Riad"
               img={ab1}
-              href1="https://drive.google.com/file/d/1wwvdNKkWbtDZW4aviJE4sBjR5TOZqSaI/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1UngrylGq2I38zsKRG0zJAbkCisJeMwRa/view?usp=sharing" />
+              href1="https://drive.google.com/file/d/1FoAJp5dmvi7lNFJpra0jvTwpU7zYkkEC/view?usp=sharing"
+              href2="https://drive.google.com/file/d/1P88XrvWH9SMWfuvJ-SpfXXqAUTG5k8a3/view?usp=sharing" />
 
             <ElectoralProfile name="Silvi Domnori"
               img={ab2}
-              href1="https://drive.google.com/file/d/1CmUTPNFVTgZQcJdR-HPH8meXhBZ2TvTh/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1d1084RGry0FK7awgb-8BJBSG0cSMC2SW/view?usp=sharing" />
+              href1="https://drive.google.com/file/d/1ZS9Gp9d4YrB8IY9hftTH2ng2USPEIh6t/view?usp=sharing"
+              href2="https://drive.google.com/file/d/1r8uYH54pUXYvqRd9n9cXnwbyt9Hf49eZ/view?usp=sharing" />
 
             <ElectoralProfile name="İrem Türkan"
               img={ab3}
-              href1="https://drive.google.com/file/d/1xtmebXixpvdaLMRxwOBp1kEu7UTg407r/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1B8wSZHpaVtiOqYu4S69gVmEO2G2bJF-J/view?usp=sharing" />
+              href1="https://drive.google.com/drive/folders/1yot9f8Hxb9GEmuPxjgnkaeu1fmaqSqdA?usp=sharing"
+              href2="https://drive.google.com/file/d/15xcYED0v3xa3_bWXQ1dZYWk4qdCjXtqp/view?usp=sharing" />
 
 
             <ElectoralProfile name="Daniel Villavicencio"
               img={ab4}
-              href1="https://drive.google.com/file/d/1xtmebXixpvdaLMRxwOBp1kEu7UTg407r/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1B8wSZHpaVtiOqYu4S69gVmEO2G2bJF-J/view?usp=sharing" />
+              href1="https://drive.google.com/file/d/1vMW5a2BvdOkO6fJalFyxrJdKg_Oi0Otl/view?usp=sharing"
+              href2="https://drive.google.com/file/d/1kfGxmlxc3e6xGzBW0GxnHvu3t0efUiHJ/view?usp=sharing" />
 
 
             <ElectoralProfile name="Mariana Morgado"
               img={ab5}
-              href1="https://drive.google.com/file/d/1xtmebXixpvdaLMRxwOBp1kEu7UTg407r/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1B8wSZHpaVtiOqYu4S69gVmEO2G2bJF-J/view?usp=sharing" />
+              href1="https://drive.google.com/file/d/1uSDrkYaWeuZw5N15fHwuvIqqR2lXAi0J/view?usp=sharing"
+              href2="https://drive.google.com/file/d/1HHB0loWQF8Kz_REIHd8OG0SQJWLTKlBD/view?usp=sharing" />
           </div>
         </div>
 

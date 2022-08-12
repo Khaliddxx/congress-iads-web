@@ -111,10 +111,12 @@ function Lecture() {
           <div className="dentalPageSecondTitle">
             <div className="dentalPageSecondTitleMain">
               <p className="hongKong dentalPageSecondTitle2">Lecture</p>
-              <p className="dentalPageSecondTitle1">Olympics </p>
+              <p className="dentalPageSecondTitle1">Contest</p>
             </div>
 
-            <a className="dentalCTA">REGISTER now!</a>
+            <a href="/landing/lecture/form" className="dentalCTA">
+              REGISTER now!
+            </a>
           </div>
           <div
             style={{
@@ -147,56 +149,71 @@ function Lecture() {
           </div>
 
           <div className="bulletPoints bulletPoints1">
-
             <div className="pagetitles">
-              <p style={{ color: '#01838C' }} className="hongKong pagetitle1">Competition</p>
+              <p style={{ color: "#01838C" }} className="hongKong pagetitle1">
+                Competition
+              </p>
               <p className="pagetitle2">Prize</p>
             </div>
-
-
-
-
 
             <div className="bulletPointsBody container">
               <ol>
                 <li>Each participant may present only one abstract.</li>
                 <li>Projects being submitted must be original research.</li>
                 <li>Applicants may send more than one abstract.</li>
-                <li>You must receive the approval of all co-authors before putting their names on the abstract.</li>
-                <li>Abstracts should include Introduction, Objectives of the investigation, Materials and Methods, Results and Conclusion.</li>
-                <li>Application form must be filled and submitted to VPSR until 12.08.2022. (vpsr@iads-web.org)</li>
-                <li>Notification of Acceptance/Non-Acceptance will be sent on 15.08.2022.</li>
+                <li>
+                  You must receive the approval of all co-authors before putting
+                  their names on the abstract.
+                </li>
+                <li>
+                  Abstracts should include Introduction, Objectives of the
+                  investigation, Materials and Methods, Results and Conclusion.
+                </li>
+                <li>
+                  Application form must be filled and submitted to VPSR until
+                  16.08.2022. (vpsr@iads-web.org)
+                </li>
+                <li>
+                  Notification of Acceptance/Non-Acceptance will be sent on
+                  17.08.2022.
+                </li>
               </ol>
-
-
             </div>
           </div>
 
-
-
-
           <div className="bulletPoints">
-
             <div className="pagetitles">
-              <p style={{ color: '#FDBE3D' }} className="hongKong pagetitle1">Lecture Contest</p>
+              <p style={{ color: "#FDBE3D" }} className="hongKong pagetitle1">
+                Lecture Contest
+              </p>
               <p className="pagetitle2">rules </p>
             </div>
 
-
-
             <div className="bulletPointsBody container">
               <ol>
-                <li>Each presenter will be given 8-10 minutes for the oral presentation, 3-5 minutes for open discussion and questions.</li>
+                <li>
+                  Each presenter will be given 8-10 minutes for the oral
+                  presentation, 3-5 minutes for open discussion and questions.
+                </li>
                 <li>Presenters may use PowerPoint presentations.</li>
-                <li>Presenters will be contacted by VPSR and Local Organizing Team and will be informed about the schedule. All the presenters must be there at the given time.</li>
-                <li>The abstract of the participant's research will be published in the Abstract Book of IADS Lecture Contest.</li>
+                <li>
+                  Presenters will be contacted by VPSR and Local Organizing Team
+                  and will be informed about the schedule. All the presenters
+                  must be there at the given time.
+                </li>
+                <li>
+                  The abstract of the participant's research will be published
+                  in the Abstract Book of IADS Lecture Contest.
+                </li>
               </ol>
-
-
             </div>
 
-            <a className="dentalCTA dentalCTAButtom">Apply Now</a>
-
+            <a
+              href="/landing/lecture/form"
+              className="dentalCTA dentalCTAButtom"
+            >
+              Apply Now
+            </a>
           </div>
 
           <div>

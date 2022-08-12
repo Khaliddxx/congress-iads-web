@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e00fcf96.css",
-    "main.js": "/static/js/main.80c0e59b.js",
+    "main.css": "/static/css/main.33a20180.css",
+    "main.js": "/static/js/main.253afa14.js",
     "static/js/787.21113674.chunk.js": "/static/js/787.21113674.chunk.js",
     "static/media/lc2.svg": "/static/media/lc2.9428534e149dfb799c710fbc79239825.svg",
     "static/media/about.png": "/static/media/about.c4b06f1fdc75ee85e8f2.png",
@@ -63,17 +63,21 @@
     "static/media/congmad3.png": "/static/media/congmad3.0af8206180aa416fd95a.png",
     "static/media/Anel Azhigaliyeva.JPG": "/static/media/Anel Azhigaliyeva.3b9b7156acf37c8236f3.JPG",
     "static/media/Almaty.webp": "/static/media/Almaty.5c09c26f473e48b30ea6.webp",
+    "static/media/22.png": "/static/media/22.66f864490cdaf6d84188.png",
     "static/media/lc1.png": "/static/media/lc1.d99790804a0082124302.png",
     "static/media/conguni3.svg": "/static/media/conguni3.2ee687aaaa118c40ca2ddc4ed009c340.svg",
+    "static/media/21.png": "/static/media/21.179dd372be38bb5de6dd.png",
     "static/media/conguni1.png": "/static/media/conguni1.e323489ce7ecbf252897.png",
     "static/media/26.jpeg": "/static/media/26.24743db181047aaed478.jpeg",
     "static/media/s6.svg": "/static/media/s6.f4d8bce13aedda1ffe98ca1d0f2471ba.svg",
     "static/media/Uni.svg": "/static/media/Uni.35390fb7dd5feac99a9e2f3324950f13.svg",
+    "static/media/23.png": "/static/media/23.922001085c9bea2c3a9d.png",
     "static/media/Ciruit.svg": "/static/media/Ciruit.0df700ce3976620fdcb5.svg",
     "static/media/Asylai Nauryzova.JPG": "/static/media/Asylai Nauryzova.112cdbe9ddcca0b638f0.JPG",
     "static/media/Arman Baimbetov.jpg": "/static/media/Arman Baimbetov.ce4f7bb8658218b23871.jpg",
     "static/media/Hong Kong Script Brush.woff": "/static/media/Hong Kong Script Brush.bd4149bbf439953592dc.woff",
     "static/media/Nurai Serikkyzy.JPG": "/static/media/Nurai Serikkyzy.cdd3e689531e1fe1199e.JPG",
+    "static/media/24.png": "/static/media/24.98d567a6a34f89f35b59.png",
     "static/media/congmad1.svg": "/static/media/congmad1.d9613a7a02724b86cb693d8b0d5c010d.svg",
     "static/media/conglec2.svg": "/static/media/conglec2.b4bc4abe41c1a6429513bc658fc6251f.svg",
     "static/media/congmad2.svg": "/static/media/congmad2.783cdbe9a60f308b4cd4895d66d514a1.svg",
@@ -120,12 +124,12 @@
     "static/media/RegCardIcon.svg": "/static/media/RegCardIcon.06e2fb3ce1847ea86750e0634cf45293.svg",
     "static/media/refIcon.svg": "/static/media/refIcon.ec02d3a44974fe01b892321fa5f95856.svg",
     "static/media/premcardIcon.svg": "/static/media/premcardIcon.04c29489fc7f594d08020ece13233b83.svg",
-    "main.e00fcf96.css.map": "/static/css/main.e00fcf96.css.map",
-    "main.80c0e59b.js.map": "/static/js/main.80c0e59b.js.map",
+    "main.33a20180.css.map": "/static/css/main.33a20180.css.map",
+    "main.253afa14.js.map": "/static/js/main.253afa14.js.map",
     "787.21113674.chunk.js.map": "/static/js/787.21113674.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e00fcf96.css",
-    "static/js/main.80c0e59b.js"
+    "static/css/main.33a20180.css",
+    "static/js/main.253afa14.js"
   ]
 }

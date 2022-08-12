@@ -18,7 +18,9 @@ import Program from "./Pages/Program/Program";
 import Transportation from "./Pages/Transportation/Transportation";
 import About from "./Pages/About/About";
 import Dental from "./Pages/Landing/Dental/Dental";
+import DentalForm from "./Pages/Landing/Dental/DentalForm";
 import Lecture from "./Pages/Landing/Lecture/Lecture";
+import LectureForm from "./Pages/Landing/Lecture/LectureForm";
 import Exchange from "./Pages/Landing/Exchange/Exchange";
 import GeneralA from "./Pages/Landing/GeneralA/GeneralA";
 import ScientificDay from "./Pages/Landing/ScientificDay/ScientificDay";
@@ -37,7 +39,9 @@ const AppRoutes = () => {
     { path: "/about", element: <About /> },
     { path: "/sponsors", element: <SponsorsPage /> },
     { path: "/landing/dental", element: <Dental /> },
+    { path: "/landing/dental/form", element: <DentalForm /> },
     { path: "/landing/lecture", element: <Lecture /> },
+    { path: "/landing/lecture/form", element: <LectureForm /> },
     { path: "/landing/exchange", element: <Exchange /> },
     { path: "/landing/general", element: <GeneralA /> },
     { path: "/scientific", element: <ScientificDay /> },

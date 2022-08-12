@@ -178,8 +178,12 @@ function GeneralA() {
 
             </p>
 
-           
+           <div className="dentalCTAButtoms">
+
             <a className="dentalCTA dentalCTAButtom">General Contest rules</a>
+            <a className="dentalCTA dentalCTAButtom" href="/electoral">Electoral Platform</a>
+           </div>
+
           </div>
 
           <div className="exchangeSecond">

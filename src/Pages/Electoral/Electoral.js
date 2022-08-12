@@ -51,8 +51,8 @@ function ElectoralProfile(props) {
       <img src={props.img} />
       <p className="elecName">{props.name}</p>
       <div className="elecCTAs">
-        <a href={props.href1} className="elecCTA">Curriculum Vitae</a>
-        <a href={props.href1} className="elecCTA">Candidacy Proposition</a>
+        <a href={props.href1} target="_blank" className="elecCTA">Curriculum Vitae</a>
+        <a href={props.href2} target="_blank" className="elecCTA">Candidacy Proposition</a>
       </div>
     </div>
   );
@@ -124,7 +124,7 @@ function Electoral() {
             <ElectoralProfile name="Abay Kalymatay"
               img={vp3}
               href1="https://drive.google.com/file/d/1_TDNCS0jQz0jCbzEKtESbORLGge-MFxx/view?usp=sharing"
-              href2="https://drive.google.com/file/d/1GoauFeYNTnBwaU4imNO-qoAsamiKZR4s/view?usp=sharing" />
+              href2="https://drive.google.com/file/d/1d1TsHpifIDGi6UtGryp3jRisazh7Bxyj/view?usp=sharing" />
 
             <ElectoralProfile name="Tamer Khalid Awwad"
               img={vp4}

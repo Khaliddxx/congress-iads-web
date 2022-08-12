@@ -271,7 +271,7 @@ function Electoral() {
           <div className="electoralProfiles container">
             <ElectoralProfile name="Ng Yook Shiang"
               img={ra4}
-              href1="https://drive.google.com/file/d/1Un_o6i2i6dR9MEMRCQzRH0IY4NLn1Njv/view?usp=sharing"
+              href1="https://drive.google.com/file/d/1brH7SVLQArP41BFjE8RkxBPxpKlWDq6o/view?usp=sharing"
               href2="https://drive.google.com/file/d/1ID29_Ei_tmIV7Y3k0VmNOiFaC1pHjpsQ/view?usp=sharing" />
 
             <ElectoralProfile name="Viandra Tjokroadiredjo"

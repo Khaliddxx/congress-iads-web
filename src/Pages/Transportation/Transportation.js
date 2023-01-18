@@ -11,7 +11,10 @@ function Transportation() {
         <div>
           <div className="transportationPageTitles">
             <p className="transportationPageTitle">About</p>
-            <p className="transportationPageSubTitle hongKong">
+            <p
+              className="transportationPageSubTitle LuthonSouthard"
+              style={{ color: "var(--secondary-color)" }}
+            >
               Transportation
             </p>
           </div>
@@ -28,31 +31,18 @@ function Transportation() {
             <div className="transportationPageTitles">
               <p className="transportationPageTitle">Flight to</p>
               <p
-                style={{ color: "#FDBE3D" }}
-                className="transportationPageSubTitle hongKong"
+                style={{ color: "var(--secondary-color)" }}
+                className="transportationPageSubTitle LuthonSouthard"
               >
-                Kazakhstan
+                Northern Cyprus
               </p>
             </div>
 
             <div className="border1"></div>
             <div className="transpMainSectionCardBody">
               <p className="transpMainSectionCardBody1">
-                You can book flights to Kazakhstan from a given link or from
-                another preferred air ticket search aggregator site.
-              </p>
-
-              <div className="transDiscountDiv">
-                <img src={TurkAir} />
-
-                <div className="transDiscount">
-                  15% discount is available on Turkish airlines flights
-                </div>
-                {/* <img src={Discount}/> */}
-              </div>
-
-              <p className="transpMainSectionCardBody2">
-                *Discount will be available for confirmed attendees
+                You can book flights to Northen Cyrprus from a given link or
+                from another preferred air ticket search aggregator site.
               </p>
             </div>
           </div>
@@ -60,7 +50,7 @@ function Transportation() {
           <div className="transpMainSectionCard">
             <div className="transpMainSectionCardBody">
               <p className="transpMainSectionCardBody1">
-                Almaty International Airport (ALA)
+                Ercan Nicosia Airport (ECN)
               </p>
             </div>
             <div className="border1"></div>
@@ -68,8 +58,8 @@ function Transportation() {
             <div className="transportationPageTitles">
               <p className="transportationPageTitle">Recommended</p>
               <p
-                style={{ color: "#FDBE3D" }}
-                className="transportationPageSubTitle hongKong"
+                // style={{ color: "#FDBE3D" }}
+                className="transportationPageSubTitle LuthonSouthard"
               >
                 Airport
               </p>
@@ -80,8 +70,8 @@ function Transportation() {
             <div className="transportationPageTitles">
               <p className="transportationPageTitle">Local</p>
               <p
-                style={{ color: "#FDBE3D" }}
-                className="transportationPageSubTitle hongKong"
+                style={{ color: "" }}
+                className="transportationPageSubTitle LuthonSouthard"
               >
                 Transportation
               </p>
@@ -90,36 +80,40 @@ function Transportation() {
             <div className="border1"></div>
             <div className="transpMainSectionCardBody">
               <p className="transpMainSectionCardBody1">
-                Don't worry! Two bus shifts will be organized from Almaty
-                airport to the hotel– at 11:00 AM and 04:00 PM.
+                Transport from and to the airport will be provided on
+                pre-congress and congress arrival dates and congress &
+                post-congress departure dates at various times set accordingly
+                to arrival times of attendees. Transfers between hotel and any
+                venues, social program spots as set on the schedule are also
+                included in the package.
               </p>
             </div>
           </div>
 
           <div className="transpMainSectionCard">
-        
-
             <div className="transpMainSectionCardBody">
-              <p className="transpMainSectionCardBody1" >
-                Visa regime of the Republic of Kazakhstan for foreign citizеns
+              <p className="transpMainSectionCardBody1">
+                Visa regime of the Northern Cyrprus for foreign citizеns
               </p>
-              <a href="/visa" className="transLearnMoreCTA">Learn More</a>
+              <a
+                href="/https://mfa.gov.ct.tr/consular-info/visa-regulations/#:~:text=Foreigners%20visiting%20the%20TRNC%20may,unfit%20to%20enter%20the%20country."
+                className="transLearnMoreCTA"
+              >
+                Learn More
+              </a>
             </div>
 
-            <div className="border1" ></div>
+            <div className="border1"></div>
 
             <div className="transportationPageTitles">
               <p className="transportationPageTitle">Visa</p>
               <p
-                style={{ color: "#FDBE3D" }}
-                className="transportationPageSubTitle hongKong"
+                style={{ color: "" }}
+                className="transportationPageSubTitle LuthonSouthard"
               >
                 Requirements
               </p>
             </div>
-
-
-           
           </div>
         </div>
       </div>

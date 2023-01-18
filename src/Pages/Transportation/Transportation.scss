@@ -20,7 +20,7 @@
       font-weight: 400;
       font-size: 50px;
       line-height: 70px;
-      color: #01838c;
+      color: var(--secondary-color);
       margin-left: 70px;
       margin-top: -40px;
       z-index: 100000;
@@ -67,7 +67,7 @@
           letter-spacing: 0.2em;
 
           color: #ffffff;
-          background: #01838c;
+          background: var(--secondary-color);
           border-radius: 100px;
           padding: 11px 28px;
           text-transform: uppercase;
@@ -94,7 +94,7 @@
         margin-right: 30px;
         // margin: auto;
 
-        background: #01838c;
+        background: var(--secondary-color);
         border-radius: 20px;
       }
 
@@ -178,7 +178,7 @@
           // min-height: 100%;
           margin: auto;
 
-          background: #01838c;
+          background: var(--secondary-color);
           border-radius: 20px;
         }
       }

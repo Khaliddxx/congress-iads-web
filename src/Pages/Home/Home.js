@@ -5,26 +5,21 @@ import Header from "../../Components/Header/Header";
 import "./Home.scss";
 import kazEmb from "../../Assets/Images/kazemb.png";
 import kazWallpaper1 from "../../Assets/Images/kazwallpaper.jpg";
-import LetterCardImage1 from "../../Assets/Images/lc1.png";
+import LetterCardImage1 from "../../Assets/Images/lc1.svg";
 import LetterCardImage2 from "../../Assets/Images/lc2.svg";
 import { Carousel } from "react-bootstrap";
-import CongressLogo from "../../Assets/Images/congresslogoLanding.png";
-import member1 from "../../Assets/Images/OrganizingComm/Arman Baimbetov.jpg";
-import member2 from "../../Assets/Images/OrganizingComm/Zhengis Zhamashev.JPG";
+import CongressLogo from "../../Assets/Images/congresslogoLanding.svg";
 
-import member3 from "../../Assets/Images/OrganizingComm/Abay Kalymtai.png";
-import member4 from "../../Assets/Images/OrganizingComm/Zhuldyz Kabizhankyzy.JPG";
-import member5 from "../../Assets/Images/OrganizingComm/Darina Lysakova.JPG";
-
-import member6 from "../../Assets/Images/OrganizingComm/Nurai Serikkyzy.JPG";
-import member7 from "../../Assets/Images/OrganizingComm/Anel Azhigaliyeva.JPG";
-import member8 from "../../Assets/Images/OrganizingComm/Darya Yavuz.png";
-import member9 from "../../Assets/Images/OrganizingComm/Asylai Nauryzova.JPG";
-import member10 from "../../Assets/Images/OrganizingComm/IMG_3203.JPG";
-
-import member11 from "../../Assets/Images/OrganizingComm/Aigerim Kenzhebek.JPG";
-import member12 from "../../Assets/Images/OrganizingComm/Ayazhan Shalkhybayeva.JPG";
-import member13 from "../../Assets/Images/OrganizingComm/Sardar Srazhadin.JPG";
+import member1 from "../../Assets/Images/OrganizingComm/mem1.png";
+import member2 from "../../Assets/Images/OrganizingComm/mem2.png";
+import member3 from "../../Assets/Images/OrganizingComm/mem3.png";
+import member4 from "../../Assets/Images/OrganizingComm/mem4.png";
+import member5 from "../../Assets/Images/OrganizingComm/mem5.png";
+import member6 from "../../Assets/Images/OrganizingComm/mem6.png";
+import member7 from "../../Assets/Images/OrganizingComm/mem7.png";
+import member8 from "../../Assets/Images/OrganizingComm/mem8.png";
+import member9 from "../../Assets/Images/OrganizingComm/mem9.png";
+import member10 from "../../Assets/Images/OrganizingComm/mem10.png";
 
 import calendar from "../../Assets/Images/TabIcons/calendar.svg";
 import location from "../../Assets/Images/TabIcons/Vector.svg";
@@ -60,15 +55,15 @@ function Home() {
                   <img src={calendar} />
                 </div>
                 <div className="link">
-                  August <br></br>
-                  16th-19th
+                  february <br></br>
+                  19th-24th
                 </div>
               </div>
               <div className="tabComponent">
                 <div className="icon">
                   <img src={location} />
                 </div>
-                <div className="link">Kazakhstan</div>
+                <div className="link">Northern Cyprus</div>
               </div>
               <div className="tabComponent">
                 <div className="icon">
@@ -98,10 +93,11 @@ function Home() {
                 backgroundColor="white"
                 bodyTextColor="#313030"
                 ctaColor={"var(--primary-color)"}
-                text="Kazakhstan is the world’s ninth largest country where East and West have merged in a unique harmony under an endlessly blue sky. The word of a Turkic origin “Kazakh” means “Free man”- this is connected with the fact that since the very ancient times Kazakhstan has been inhabited by freedom-loving nomads."
+                ctaFontColor="white"
+                text="In Cyprus, the pearl of Mediterranean….Northern Cyprus (Turkish: Kuzey Kıbrıs), officially the Turkish Republic of Northern Cyprus, comprises the northeastern portion of the island of Cyprus. Northern Cyprus extends from the tip of the Karpass Peninsula in the northeast to Morphou Bay, Cape Kormakitis and its westernmost point, the Kokkina exclave in the west. Its southernmost point is the village of Louroujina."
               >
                 <p>Explore</p>
-                <h1 className="hongKong">Kazakhstan</h1>
+                <h1 className="LuthonSouthard">NorthernCyprus</h1>
               </InfoCard>
             </div>
           </div>
@@ -113,27 +109,24 @@ function Home() {
           <div class="aboutInner">
             <div className="exploreCard">
               <InfoCard
-                backgroundColor="#01838C"
+                backgroundColor={"var(--secondary-color)"}
                 bodyTextColor="white"
-                ctaColor={"var(--primary-color)"}
+                ctaColor={"white"}
                 text={
                   <div>
-                    <strong>Kazakh National Medical University</strong>, named
-                    after S.D. Asfendiyarov, well-known scientists and teachers
-                    of Kazakhstan, academicians of the National Academy of
-                    Sciences of the Republic of Kazakhstan, the Russian Academy
-                    of Medical Sciences, the Academy of Preventive Medicine of
-                    the Republic of Kazakhstan, International Academies, honored
-                    workers of science and education, honored doctors and
-                    pharmacists work.
+                    The congress will include a 5 night stay at Acapulco Hotel
+                    where not only a rich scientific program of lectures,
+                    workshops, trainings, lecture contests and dental olympics,
+                    the token IADS Exchange Fair, the General Assembly and
+                    unforgettable gala night will be expecting you; but also an
+                    immersion into Northern Cypriot culture with sightseeing,
+                    dining at meyhane and if you have yet some energy to consume
+                    - clubs and parties!!
                   </div>
                 }
               >
                 <p style={{ color: "white" }}>About the</p>
-                <h1
-                  style={{ color: "var(--primary-color)" }}
-                  className="hongKong"
-                >
+                <h1 style={{ color: "white" }} className="LuthonSouthard">
                   Congress
                 </h1>
               </InfoCard>
@@ -144,27 +137,25 @@ function Home() {
         <div class="pre">
           <div className="preCard">
             <InfoCard
-              backgroundColor="#FDBE3D"
+              backgroundColor={"var(--primary-color)"}
+              bodyTextColor="white"
               text={
                 <div>
-                  The <strong>'Medeo'</strong> complex is located on the border
-                  of the city of Almaty at an altitude of 1691 meters above sea
-                  level. Beautiful views of the tops of the Zailiysky Ala Tau
-                  mountains, clean air, soft sun - Almaty residents of all ages
-                  and occupations love to spend their time here. Medeo got its
-                  name in honor of a nomad who lived here at the beginning of
-                  the twentieth century and founded an aul (village) in that
-                  area.
+                  Pre-congress will start at Girne, a beautiful coastal city of
+                  Northern Cyprus which is located in the northmost part of the
+                  island. During the pre-congress, you will have a chance to
+                  visit the iconic Kyrenia Harbour. This historical place is a
+                  horseshoe-shaped area that is surrounded by restaurants and
+                  bars that serve tourists in a unique atmosphere. This tiny
+                  harbour, full of yachts and fishing boats, is framed by the
+                  colossal hulk of its Crusader castle.
                 </div>
               }
             >
-              <h1
-                style={{ color: "var(--secondary-color)" }}
-                className="hongKong"
-              >
+              <h1 style={{ color: "white" }} className="LuthonSouthard">
                 Pre
               </h1>
-              <p style={{ color: "#1C1C1C " }}>Congress</p>
+              <p style={{ color: "white" }}>Congress</p>
             </InfoCard>
           </div>
           <div class="preInner"></div>
@@ -178,12 +169,9 @@ function Home() {
               bodyTextColor="white"
               ctaColor={"var(--secondary-color)"}
               ctaFontColor={"white"}
-              text="Among the snow-white mountain peaks, where the Zailiysky Alatau and Kungei-Alatau ridges join, in a small bridge of Kolsai gorge, there are hidden natural diamonds of the nature of picturesque Kazakhstan - Kolsai Lakes. Surrounded by majestic centuries-old fir trees, the three lakes shine in the light of the bright mountain sun, completely justifying their title 'Pearl of the Northern Tien Shan'."
+              text="During the post-congress, you will be visiting the old town of Nicosia, which is surrounded by walls built by Venetians to protect themselves from the Ottoman Empire's conquest of the island. This part of the island houses different time periods of the island. You will have the chance to visit the bazaar and be dazzled by the history popping up from every corner of the city."
             >
-              <h1
-                style={{ color: "var(--primary-color)" }}
-                className="hongKong"
-              >
+              <h1 style={{ color: "white" }} className="LuthonSouthard">
                 Post
               </h1>
               <p style={{ color: "white " }}>Congress</p>
@@ -195,71 +183,62 @@ function Home() {
           <img className="letterSectionCard" src={LetterCardImage1} />
 
           <div className="letterSectionBody">
-            <h1 className="title">Dr. Huthaifa Abdul qader </h1>
-            <p className="hongKong">Dear IADS Members & Alumni, </p>
+            <h1 className="title">Dr. Lamis Elsheikh</h1>
+            <p
+              className="LuthonSouthard"
+              style={{ color: "var(--primary-color)", fontSize: "40px" }}
+            >
+              Esteemed IADS Members & Alumni,
+            </p>
             <p className="body">
-              Greetings from Switzerland! <br></br> We are very thrilled to
-              announce our official 69th Annual Congress campaign for 2022. This
-              event marks the first formal IADS Annual Congress after the
-              pandemic crisis. Our network of dental students and early-career
-              professionals have been waiting for this congregation for a long
-              time and it is now finally taking place in the city of Almaty in
-              Kazakhstan, where the Alma-Ata Declaration of 1978 emerged as a
-              major milestone of the twentieth century in the field of public
-              health.
+              We are delighted to officially announce our 69th Mid-Year Meeting
+              2023 has opened its doors to dental students and young
+              professionals worldwide. We’d like to extend our invitation for
+              you to join us and immerse yourself into this cryptic emissary of
+              several ancient civilizations that is Northern Cyprus, in the
+              heart of the Mediterranean Sea.
               <br></br>
               <br></br>
-              The Local Organizing Committee (LOC) is fully amenable to lay out
-              all aspects necessary for the successful implementation of this
-              global dental students congress under the patronage of IADS
-              Executive Committee. Both teams will work collectively with the
-              spirit of teamwork and professionalism to bring about one of the
-              most well-organized and informative events that gathers students
-              and young dentists under one roof. The theme of this AC is
-              Artificial Intelligence & Digitalization in Dentistry so you do
-              not want to miss this!
+              The Local Organizing Committee has been relentlessly working to
+              achieve an extraordinary event, with the help of the IADS
+              Executive Committee; an event that will provide dental students
+              and young professionals a platform to discuss developments and
+              current issues in the field of dentistry and public health, while
+              at the same time introducing all of us to a blend of rare
+              traditions rooted in an impressive cultural heritage. Looking
+              forward to seeing you all join our pre-congress trip to Girne,
+              attend our general assembly and scientific program in Kyrenia and
+              tag along to our post congress experience at the old town of
+              Nicosia.
               <br></br>
               <br></br>
-              We are very delighted to see you all joining our pre-congress trip
-              to the mountain resort “Modeo”, attending our General Assembly &
-              Scientific Program at KAZANMU (Kazakh National Medical
-              University), and coming along to our post-congress experience at
-              Kolsay Lakes where we will be spending our last night together! So
-              pack your bags for a once in a lifetime experience!
+              <strong>Dr. Lamis Elsheikh, BDS</strong>
               <br></br>
-              <br></br>
-              <strong>Huthaifa Abdul Qader, DDS </strong>
-              <br></br>
-              <strong>IADS President 2021/22</strong>
+              <strong>IADS President 2022\23</strong>
             </p>
           </div>
         </div>
 
         <div style={{ textAlign: "right" }} class="letterSection">
           <div className="letterSectionBody">
-            <h1 className="title">Zhengis Zhamashev</h1>
-            <p className="hongKong">Greetings to all, Dear Friends! </p>
+            <h1 className="title">Özel Baysen</h1>
+            <p
+              className="LuthonSouthard"
+              style={{ color: "var(--primary-color)", fontSize: "40px" }}
+            >
+              Dear IADS delegates,{" "}
+            </p>
             <p className="body">
-              We set ourselves big goals and do our best to achieve them. We
-              joined IADS only last year, and already this year we’re preparing
-              for a grand 69th Annual Congress of IADS in the beautiful city of
-              Almaty, located in the south of Kazakhstan. The IADS Executive
-              Committee and the Local Organizing Committee are preparing
-              something unusual and large-scale for you. We believe that with
-              every action we take, we contribute to the community of young
-              dentists around the world. The Kazakhstan Association of Dental
-              Young is one of the youngest associations, but it consists of the
-              most powerful dental enthusiasts who create new directions in
-              science, business and public health. Together is better.
+              We are all very excited to host the 69th Mid-Year Meeting of IADS
+              in our wonderful island for the second time. Our local organising
+              committee and IADS Executive Committee are planning an amazing
+              congress for you that includes both enjoyable and informative days
+              for all of you. Team work makes a dream work.
               <br></br>
               <br></br>
-              Best regards,
-              <br></br>
-              <strong>
-                President of Kazakhstan Association of Dental Youth
-              </strong>
-              <br></br>
-              <strong>Zhengis Zhamashev</strong>
+              <strong>Özel Baysen</strong>
+              <br />
+              <strong>Northern Cyprus Association of Dental Students</strong>
             </p>
           </div>
 
@@ -269,7 +248,7 @@ function Home() {
         <div id="schedule" className="schedule">
           <div className="scheduleHeader">
             <div className="scheduleTitle">
-              <h1 className="hongKong">Congress</h1>
+              <h1 className="LuthonSouthard">Congress</h1>
               <p>Schedule</p>
             </div>
             <a className="scheduleCTA"> View the complete schedule here </a>
@@ -279,130 +258,165 @@ function Home() {
           <div className="scheduleInner">
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#8FFF37'}}>Pre-congress </p>
-                <p className="date">August 14</p>
+                <p style={{ color: "#8FFF37" }}>Pre-congress </p>
+                <p className="date">February 17</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                <span style={{color: '#8FFF37'}}>Pre-Congress attendees:</span> Arrivals and Check-in
+                <span style={{ color: "#8FFF37" }}>
+                  Pre-Congress attendees:
+                </span>{" "}
+                Arrival, Check-In, Dinner
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#8FFF37'}}>Pre-congress </p>
-                <p className="date">August 15</p>
+                <p style={{ color: "#8FFF37" }}>Pre-congress </p>
+                <p className="date">February 18</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-              <span style={{color: '#8FFF37'}}>Pre-Congress attendees:</span>  Breakfast | Medeo Mountain Resort |
-                Hiking | Lunch
+                <span style={{ color: "#8FFF37" }}>
+                  Pre-Congress attendees:
+                </span>{" "}
+                Breakfast | Girne Harbour & Castle | Kyrenia Castle | Lunch |
+                Bellapais Monastery | Karmi Village | Nima
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FDBE3D'}}>Congress </p>
-                <p className="date">August 15</p>
+                <p style={{ color: "#8FFF37" }}>Pre-congress </p>
+                <p className="date">February 19</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-              <span style={{color: '#FDBE3D'}}>Congress attendees:</span> Arrivals and Check-in Opening Ceremony
+                <span style={{ color: "#8FFF37" }}>
+                  Pre-Congress attendees:
+                </span>{" "}
+                Breakfast | Free Time | Lunch | Gillham Vineyard | Free Time |
+                Dinner
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FDBE3D'}}>Congress </p>
-                <p className="date">August 16</p>
+                <p style={{ color: "#FDBE3D" }}>Congress </p>
+                <p className="date">February 19</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                General Assembly Day 1 | Lunch | Party
+                <span style={{ color: "#FDBE3D" }}>Congress attendees:</span>{" "}
+                Arrival & Check-In | Dinner | Opening Ceremony
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FDBE3D'}}>Congress </p>
-                <p className="date">August 17</p>
+                <p style={{ color: "#FDBE3D" }}>Congress </p>
+                <p className="date">February 20</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                General Assembly Day 2 | National Exchange Officers (NEOs)
-                meeting | Lunch
+                Breakfast | General Assembly Day 1 | Lunch | Free Time | Club
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FDBE3D'}}>Congress </p>
-                <p className="date">August 18</p>
+                <p style={{ color: "#FDBE3D" }}>Congress </p>
+                <p className="date">February 21</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                Scientific Day 1 | Training Sessions | Lunch | Talent Show
+                Breakfast | General Assembly Day 2 | Lunch | Free Time | Dinner
+                | Exchange Fair
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FDBE3D'}}>Congress </p>
-                <p className="date">August 19</p>
+                <p style={{ color: "#FDBE3D" }}>Congress </p>
+                <p className="date">February 22</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                Scientific Day | Dental Olympics | Lecture Contest | Lunch |
-                Closing Party (Gala Dinner)
+                Breakfast | General Assembly Day 2 | Lunch | Free Time | Dinner
+                | Exchange Fair
+              </div>
+            </div>
+
+            <div className="scheduleRow">
+              <div className="scheduleRowTitle">
+                <p style={{ color: "#FDBE3D" }}>Congress </p>
+                <p className="date">February 23</p>
+              </div>
+              <div className="border1"></div>
+              <div className="description">
+                Breakfast | Scientific Day 2 | Lunch | Training Sessions |
+                Lecture Contest | Dental Olympics | Dinner | Gala Night
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
                 <p>Departure </p>
-                <p className="date">August 20</p>
+                <p className="date">February 24</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-              <span style={{color: '#FDBE3D'}}>Congress attendees: </span>Departures
+                <span style={{ color: "#FDBE3D" }}>Congress attendees: </span>
+                Breakfast | Departure
                 <br></br>
-                <span style={{color: '#8FFF37'}}>Pre-Congress attendees: </span>Departures
+                <span style={{ color: "#8FFF37" }}>
+                  Pre-Congress attendees:{" "}
+                </span>
+                Breakfast | Departure
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
-                <p className="date">August 20</p>
+                <p style={{ color: "#FF8CDF" }}>Post-Congress </p>
+                <p className="date">February 24</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Breakfast | Trip to Kolsay Lake |
-                Sightseeing <br></br>| Photoshooting | Social Activities | Team building
-                in the mountains | Lunch & Dinner
+                <span style={{ color: "#FF8CDF" }}>
+                  Post-Congress attendees:{" "}
+                </span>{" "}
+                Breakfast | Transfer to Nicosia | City Tour | Lunch | Samanbahçe
+                Tour | Famagusta Old City Tour | Aspava Tavern | Free Time
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
-                <p className="date">August 21</p>
+                <p style={{ color: "#FF8CDF" }}>Post-Congress </p>
+                <p className="date">February 25</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Breakfast | Trip back to Novotel,
-                Almaty
+                <span style={{ color: "#FF8CDF" }}>
+                  Post-Congress attendees:{" "}
+                </span>{" "}
+                Breakfast | Kapalı Maraş Tour | Salamis Tour | Othello Castle |
+                St Barnabas | Bar | Free Time
               </div>
             </div>
 
             <div className="scheduleRow">
               <div className="scheduleRowTitle">
-                <p style={{color: '#FF8CDF'}}>Post-Congress </p>
-                <p className="date">August 22</p>
+                <p style={{ color: "#FF8CDF" }}>Post-Congress </p>
+                <p className="date">February 26</p>
               </div>
               <div className="border1"></div>
               <div className="description">
-                <span style={{color: '#FF8CDF'}}>Post-Congress attendees: </span> Departures
+                <span style={{ color: "#FF8CDF" }}>
+                  Post-Congress attendees:{" "}
+                </span>{" "}
+                Breakfast | Departures
               </div>
             </div>
           </div>
@@ -412,7 +426,7 @@ function Home() {
 
         <section class="membersSection">
           <div className="membersSectionTitle">
-            <p className="hongKong">Meet the</p>
+            <p className="LuthonSouthard">Meet the</p>
             <div className="subTitle">
               <p>Local Organizing</p>
               <p>Committee</p>
@@ -421,71 +435,51 @@ function Home() {
           <div class="container">
             <ul class="membersList">
               <MemberCard
-                name="Arman Baimbetov"
+                name="Mustafa Hacılar"
                 position="AC Chairperson"
                 img={member1}
               />
               <MemberCard
-                name="Zhengis Zhamashev"
+                name="Özel Baysen"
                 position="head organizer"
                 img={member2}
               />
               <MemberCard
-                name="Abay Kalymtai"
-                position="Vice-Chair"
+                name="Sedat Burak Gultepe"
+                position="Organizer"
                 img={member3}
               />
               <MemberCard
-                name="Abylai Orazaly"
-                position="Activity Co-ordinator"
+                name="İsmet Ersalıcı"
+                position="Treasurer"
                 img={member4}
               />
               <MemberCard
-                name="Darina Lysakova"
-                position="Secretary"
+                name="Serra Özdenak"
+                position="Head of Scientific"
                 img={member5}
               />
 
               <MemberCard
-                name="Nurai Serikkyzy"
-                position="Guides coordinator & Accommodation and Venue"
+                name="Bersun Elif Ozer"
+                position="Contact Person"
                 img={member6}
               />
               <MemberCard
-                name="Anel Azhigaliyeva"
-                position="Fundraising coordinator"
+                name="Baris Veysel Sendur"
+                position="Head of Logistics"
                 img={member7}
               />
+              <MemberCard name="Emre Ünlü" position="Editor" img={member8} />
               <MemberCard
-                name="Dar’ya Yavuz"
-                position="IT coordinator (Publications team, IT team, Design team)"
-                img={member8}
-              />
-              <MemberCard
-                name="Asylai Nauryzova"
-                position="IT coordinator (Publications team, IT team, Design team)"
+                name="Ali El Kasım"
+                position="Head of Social Affairs"
                 img={member9}
               />
               <MemberCard
-                name="Dariga Ospanova"
-                position="IT coordinator (Publications team, IT team, Design team)"
+                name="İrem TÜrkan"
+                position="Advisor"
                 img={member10}
-              />
-
-              <MemberCard
-                name="Aigerim Kenzhebekz"
-                position="Social program coordinator"
-                img={member11}
-              />
-              <MemberCard
-                name="Ayazhan Shalkhybayeva"
-                position="Registration coordinator"
-                img={member12}
-              />
-              <MemberCard
-                name="Sardar Srazhadin"
-                position="Logistics coordinator"
-                img={member13}
               />
             </ul>
           </div>

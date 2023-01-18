@@ -6,15 +6,14 @@
   input.invalid {
     background-color: #ffdddd;
   }
-  label{
+  label {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     /* identical to box height */
-    
-    
+
     /* #333333 - Dark Grey */
-    
+
     color: #333333;
   }
 
@@ -52,13 +51,12 @@
         line-height: 24px;
         text-align: center;
 
-        
         box-sizing: border-box;
         border-radius: 50%;
         z-index: 10;
       }
 
-      .regFormNumInactive{
+      .regFormNumInactive {
         color: #01838c;
 
         background: #f9f9f9;
@@ -66,19 +64,14 @@
       }
 
       .regFormNumActive {
-
-        background: #01838C;
+        background: #01838c;
         color: white;
-
       }
-
-
-
 
       .regFormborder {
         height: 10px;
         width: 100%;
-       
+
         margin: auto;
         margin-right: -12px;
         margin-left: -12px;
@@ -86,15 +79,11 @@
 
       .regFormborderActive {
         background-color: #01838c;
-
       }
 
       .regFormborderInactive {
         background-color: #b7b7b7;
-
-
-    }
-
+      }
 
       .regFormborder:first-child {
         border-bottom-left-radius: 10px;
@@ -190,7 +179,7 @@
       margin-left: 170px;
       /* identical to box height */
 
-      color: #fdbe3d;
+      color: var(--primary-color);
     }
   }
 }

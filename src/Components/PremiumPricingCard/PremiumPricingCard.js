@@ -7,11 +7,17 @@ function PremiumPricingCard(props) {
       <div className="premiumPricingCard">
         <img src={icon} />
         <div className="titleComp">
-          <p className="hongKong">Pre+Post</p>
-          <p className="title">Congress</p>
+          <p className="hongKong" style={{ color: "white" }}>
+            Pre+Post
+          </p>
+          <p className="title" style={{ color: "white" }}>
+            Congress
+          </p>
           <p className="subTitle">Package</p>
           <p className="price">
-            <span className="currency">€</span>
+            <span className="currency" style={{ color: "white" }}>
+              €
+            </span>
             {props.price}
           </p>
         </div>

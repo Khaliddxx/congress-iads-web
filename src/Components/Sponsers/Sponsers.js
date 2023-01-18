@@ -36,14 +36,15 @@ function Sponsers(props) {
           <img src={currentPath == "/" ? zhermack : zhermack2}></img>
           <img src={currentPath == "/" ? HFC : HFC2}></img>
           <img src={colgate}></img>
-          <img src={currentPath == "/" ? tr : tr1}></img>
-          <img src={Uni}></img>
+          {/* <img src={currentPath == "/" ? tr : tr1}></img> */}
+          {/* <img src={Uni}></img> */}
+
           <img src={currentPath == "/" ? gold : gold1}></img>
-          <img src={KSA}></img>
+          {/* <img src={KSA}></img> */}
           <img src={silver}></img>
-          <img src={Zeiss}></img>
+          {/* <img src={Zeiss}></img> */}
           <img src={currentPath == "/" ? bronze : bronze1}></img>
-          <img src={jaden}></img>
+          {/* <img src={jaden}></img> */}
         </div>
       </div>
     </>

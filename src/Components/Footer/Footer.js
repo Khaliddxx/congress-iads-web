@@ -71,8 +71,13 @@ function Footer(props) {
           </div>
         </div>
 
-        <p>IADS annual congress kazakhstan 2022®</p>
-        <p>Developed by xDev</p>
+        <p>IADS Mid-year congress Northern Cyprus 2023®</p>
+        <p>
+          Developed by{" "}
+          <a style={{ textDecoration: "none" }} href="https://khalidxah.tech">
+            xDev
+          </a>
+        </p>
       </div>
     </>
   );

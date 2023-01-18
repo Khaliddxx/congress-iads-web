@@ -1,82 +1,77 @@
 .registrationCard {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 550px;
+
+  .registrationCardIcon {
+    width: 25%;
+  }
+
+  .bodyRegCard {
+    .title {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 45px;
+      font-family: "Luthon Southard Script";
+      font-weight: 500;
+      color: var(--secondary-color);
+      // background-color: red;
+      margin: 0;
+      margin-left: 0px;
+    }
+
+    .subTitle {
+      margin: 0;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #3f3f3f;
+    }
+
+    .body {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #313030;
+    }
+  }
+
+  .mainRegCard {
+    width: 75%;
     display: flex;
-    flex-direction: row;
-    height: fit-content;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 550px;
+    flex-direction: column;
+    margin-top: 46px;
 
-    .registrationCardIcon {
-        width: 25%;
+    .ctasRegCard {
+      margin-bottom: 11px;
+      display: flex;
+      gap: 20px;
+      text-align: center;
 
-    }
-
-    .bodyRegCard {
-        .title {
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 45px;
-            color: #01838C;
-            // background-color: red;
-            margin: 0;
-            margin-left: -40px;
-
-        }
-
-        .subTitle {
-            margin: 0;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 36px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #3F3F3F;
-        }
-
-        .body {
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-            color: #313030;
-        }
-    }
-
-    .mainRegCard {
-        width: 75%;
+      .ctaRegCard {
+        padding: 6px 28px;
+        border-radius: 100px;
+        text-decoration: none;
         display: flex;
-        flex-direction: column;
-        margin-top: 46px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-        .ctasRegCard {
-            margin-bottom: 11px;
-            display: flex;
-            gap: 20px;
-            text-align: center;
+      .card1 {
+        background: var(--secondary-color);
+        color: white;
+      }
 
-            .ctaRegCard {
-                padding: 6px 28px;
-                border-radius: 100px;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                    
-            }
-
-            .card1 {
-                background: #01838C;
-                color: white;
-
-            }
-
-            .card2 {
-                background: var(--primary-color);
-                color: #1D1D1B;
-            }
-
-
-        }
-
+      .card2 {
+        background: var(--primary-color);
+        color: white;
+      }
     }
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Packages from "../../Components/Packages/Packages";
 import RegistrationCard from "../../Components/RegistrationCard/RegistrationCard";
-import regImage from "../../Assets/Images/regImage.svg";
+import regImage from "../../Assets/Images/regImage.png";
 import refIcon from "../../Assets/Images/Icons/refIcon.svg";
 import "./Registration.scss";
 
@@ -74,7 +74,7 @@ function Registration() {
           </div>
           <a
             className="refCta"
-            href="https://drive.google.com/file/d/1r47Ov9aukpNQ79dVTaqJ2NG75ZsBAv13/view"
+            href="https://drive.google.com/file/d/1E29VqxucqVigGysrzTdvrlj-WvGaSr1G/view?usp=drivesdk"
             target={"_blank"}
           >
             Learn More

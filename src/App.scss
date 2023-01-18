@@ -1,23 +1,29 @@
 @font-face {
-  font-family: 'Hong Kong Script Brush Regular';
+  font-family: "Hong Kong Script Brush Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Hong Kong Script Brush Regular'), url('../src/Assets/Fonts/Hong Kong Script Brush.woff') format('woff');
+  src: local("Hong Kong Script Brush Regular"),
+    url("../src/Assets/Fonts/Hong Kong Script Brush.woff") format("woff");
+}
+@font-face {
+  font-family: "Luthon Southard Script";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hong Kong Script Brush Regular"),
+    url("../src/Assets/Fonts/Luthon Southard Script.ttf") format("woff");
 }
 
-body{
+body {
   background-color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 :root {
-  --primary-color: #FDBE3D;
-  --secondary-color: #01838C;
+  --primary-color: #244084;
+  --secondary-color: #9b143b;
   --black-color: #2d2d2d;
   --grey-color: #6d6d6d;
 }
 
-
 @keyframes App-logo-spin {
-
 }

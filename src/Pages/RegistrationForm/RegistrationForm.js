@@ -90,7 +90,7 @@ function RegistrationForm() {
 
     axios
       .post(
-        "https://sheet.best/api/sheets/2224fd55-26ba-4013-bd62-dfcfa1fe0b3f",
+        "https://sheet.best/api/sheets/b1d3ef9b-9c56-439c-a249-332e0ff20cfd",
         data
       )
       .then((response) => {
@@ -110,7 +110,7 @@ function RegistrationForm() {
           setModalTitle("Congratulations");
           setRefresh(true);
           setError(
-            "Your results has been sent, check your email for payment instructions"
+            "Your registration has been sent. Check your email for payment instructions"
           );
         },
         (error) => {
@@ -246,7 +246,7 @@ function RegistrationForm() {
             Congress<br></br>
             <span>Registration</span>
           </p>
-          <p className="regFormSub hongKong">Form</p>
+          <p className="regFormSub LuthonSouthard">Form</p>
         </div>
         <div className="regForm container">
           {/*   <div className="regFormTabs">
@@ -1281,11 +1281,11 @@ function RegistrationForm() {
                     Choose...
                   </option>
 
-                  <option value={"Package A = Congress 380 euros"}>
-                    Package A = Congress 380 euros
+                  <option value={"Package A = Congress 400 euros"}>
+                    Package A = Congress 400 euros
                   </option>
-                  <option value={"Package B = Precongres + Congress 450 euros"}>
-                    Package B = Precongres + Congress 450 euros
+                  <option value={"Package B = Precongres + Congress 520 euros"}>
+                    Package B = Precongres + Congress 520 euros
                   </option>
                   <option
                     value={"Package C = Congres + Post Congress 520 euros"}
@@ -1294,10 +1294,10 @@ function RegistrationForm() {
                   </option>
                   <option
                     value={
-                      "Package D = Precongress + Congress + Post Congress 590 euros"
+                      "Package D = Precongress + Congress + Post Congress 620 euros"
                     }
                   >
-                    Package D = Precongress + Congress + Post Congress 590 euros
+                    Package D = Precongress + Congress + Post Congress 620 euros
                   </option>
                 </select>
 
@@ -1466,9 +1466,8 @@ function RegistrationForm() {
                     required
                   />
                   <label class="form-check-label" for="invalidCheck4">
-                    I understand that in case my registration is not completed
-                    within the early bird period, regular pricing will be
-                    applied.
+                    I understand that in case my payment is not completed within
+                    the specified period, my registration will be invalidated.
                   </label>
                   <div class="invalid-feedback">
                     You must agree before submitting.
@@ -1557,7 +1556,7 @@ function RegistrationForm() {
                 Back
               </button> */}
               <button
-                type="submit"
+                // type="submit"
                 className="btn next"
                 form="form1"
                 disabled={loading ? true : false}

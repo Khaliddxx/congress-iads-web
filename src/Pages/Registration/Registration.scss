@@ -1,138 +1,129 @@
 .regPage {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .mainReg {
+    .mainRegimg {
+      max-width: 100%;
+      margin: auto;
+    }
+
+    margin: auto;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+  }
 
-    .mainReg {
-        .mainRegimg {
-            max-width: 100%;
-            margin: auto;
-        }
+  .refund {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px 0;
+    flex-wrap: wrap;
+    width: 90%;
+    background: var(--secondary-color);
+    border-radius: 20px;
 
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        gap: 20px 50px;
-        flex-wrap: wrap;
+    // min-height: 126px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    margin-top: 85px;
+    margin-bottom: 85px;
+
+    img {
+      margin-top: -50px;
+      width: 12%;
     }
 
+    .refundTitle {
+      font-style: normal;
+      // font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
 
+      color: #ffffff;
+    }
+
+    .refundbody {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .refborder {
+      background: #c4c4c4;
+      border-radius: 100px;
+      width: 6px;
+      height: 80px;
+    }
+
+    .refCta {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 28px;
+      text-align: center;
+
+      left: 1021px;
+      right: 249px;
+      top: 1307.95px;
+
+      background: var(--primary-color);
+      border-radius: 100px;
+      text-decoration: none;
+      color: white;
+
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      /* identical to box height */
+
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      // padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .regPage {
     .refund {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 30px 0;
-        flex-wrap: wrap;
-        width: 90%;
-        background: #01838C;
-        border-radius: 20px;
-
-        // min-height: 126px;
-
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-
-        margin-top: 85px;
-        margin-bottom: 85px;
-
-        img{
-            margin-top: -50px;
-            width: 12%;
-        }
-
-        .refundTitle {
-            font-style: normal;
-            // font-weight: 700;
-            font-size: 40px;
-            line-height: 48px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-
-            color: #FFFFFF;
-        }
-
-        .refundbody {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-            color: #FFFFFF;
-            text-align: center;
-
-        }
-
-        .refborder {
-            background: #C4C4C4;
-            border-radius: 100px;
-            width: 6px;
-            height: 80px;
-        }
-
-        .refCta {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 11px 28px;
-            text-align: center;
-
-            left: 1021px;
-            right: 249px;
-            top: 1307.95px;
-
-            background: #FDBE3D;
-            border-radius: 100px;
-            text-decoration: none;
-            color: #2D2D2D;
-
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 16px;
-            /* identical to box height */
-
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-
-            // padding-bottom: 20px;
-
-        }
+      img {
+        margin-top: -50px;
+        width: 20%;
+      }
+      .refborder {
+        display: none;
+      }
     }
+  }
 }
 
-
-@media only screen and (max-width : 1200px) {
-    .regPage {
-        .refund {
-            img{
-                margin-top: -50px;
-                width: 20%;
-            }
-            .refborder{
-                display: none;
-            }
-        }
-
+@media only screen and (max-width: 992px) {
+  .regPage {
+    .refund {
+      img {
+        margin-top: 0px;
+        width: 30%;
+      }
+      .refborder {
+        display: none;
+      }
     }
-
-}
-
-
-@media only screen and (max-width : 992px) {
-    .regPage {
-        .refund {
-            img{
-                margin-top: 0px;
-                width: 30%;
-            }
-            .refborder{
-                display: none;
-            }
-        }
-
-    }
-
+  }
 }
